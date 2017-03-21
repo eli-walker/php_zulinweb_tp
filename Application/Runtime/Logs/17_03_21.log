@@ -393,3 +393,176 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002832s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002917s ]
 
+[ 2017-03-21T21:30:22+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Link/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003808s ]
+SQL: DESCRIBE cs_link [ RunTime:0.072150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_link` LIMIT 1   [ RunTime:0.000404s ]
+SQL: SELECT * FROM `cs_link` ORDER BY id LIMIT 0,8   [ RunTime:0.001028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined index: desc D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\65e4f6df08c62e8a208c27167d615170.php 第 119 行.
+NOTIC: [8] Undefined index: desc D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\65e4f6df08c62e8a208c27167d615170.php 第 119 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017980s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003605s ]
+
+[ 2017-03-21T21:30:26+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Link/edit/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004101s ]
+SQL: DESCRIBE cs_link [ RunTime:0.015079s ]
+SQL: SELECT * FROM `cs_link` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000886s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined index: desc D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\907c42094b4e6dad723e6233a7efc03f.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047616s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004704s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003127s ]
+
+[ 2017-03-21T21:30:35+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Link/edit/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001403s ]
+SQL: DESCRIBE cs_link [ RunTime:0.008243s ]
+SQL: SELECT * FROM `cs_link` WHERE ( `title` = '百度' ) AND ( `id` <> '7' ) LIMIT 1   [ RunTime:0.126790s ]
+SQL: UPDATE `cs_link` SET `title`='百度',`url`='http://www.baidu.com' WHERE ( `id` = 7 ) [ RunTime:0.001177s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001408s ]
+
+[ 2017-03-21T21:30:36+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Link/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001466s ]
+SQL: DESCRIBE cs_link [ RunTime:0.007126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_link` LIMIT 1   [ RunTime:0.000411s ]
+SQL: SELECT * FROM `cs_link` ORDER BY id LIMIT 0,8   [ RunTime:0.000749s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined index: desc D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\65e4f6df08c62e8a208c27167d615170.php 第 119 行.
+NOTIC: [8] Undefined index: desc D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\65e4f6df08c62e8a208c27167d615170.php 第 119 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001732s ]
+
+[ 2017-03-21T21:35:59+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Link/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007850s ]
+SQL: DESCRIBE cs_link [ RunTime:0.035900s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_link` LIMIT 1   [ RunTime:0.000778s ]
+SQL: SELECT * FROM `cs_link` ORDER BY id LIMIT 0,8   [ RunTime:0.001089s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Undefined index: desc D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\65e4f6df08c62e8a208c27167d615170.php 第 119 行.
+NOTIC: [8] Undefined index: desc D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\65e4f6df08c62e8a208c27167d615170.php 第 119 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009984s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011331s ]
+
+[ 2017-03-21T21:36:03+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Cate/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006146s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.008220s ]
+ERR: 1146:Table 'carshop.cs_cate' doesn't exist
+ [ SQL语句 ] : DESCRIBE cs_cate
+SQL: SELECT * FROM `cs_cate` ORDER BY sort asc  [ RunTime:0.001632s ]
+ERR: 1146:Table 'carshop.cs_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `cs_cate` ORDER BY sort asc 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003721s ]
+
+[ 2017-03-21T21:36:39+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Cate/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001967s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.007432s ]
+ERR: 1146:Table 'carshop.cs_cate' doesn't exist
+ [ SQL语句 ] : DESCRIBE cs_cate
+SQL: SELECT * FROM `cs_cate` ORDER BY sort asc  [ RunTime:0.001454s ]
+ERR: 1146:Table 'carshop.cs_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `cs_cate` ORDER BY sort asc 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002190s ]
+

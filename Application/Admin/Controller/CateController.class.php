@@ -4,7 +4,7 @@ namespace Admin\Controller;
 
 class CateController extends CommonController {
     public function index(){
-	//$this->show('Admin模块的index控制器的index方法','utf-8');
+
 	
 	$this->display();
     }
