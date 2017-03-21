@@ -1,0 +1,116 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="applicable-device" content="pc">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" type="text/css" media="screen" href="__PUBLIC__/style/style.css"  />
+<link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" />
+<title>MYSPACE--GUO</title><meta name="keywords" content="MYSPACE--GUO" />
+<meta name="description" content="MYSPACE--GUO" />
+
+<!-- 百度统计（G） -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8fd40b00fe7dd51a546356362f0c923e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+<body class="home blog">
+
+	<!--/引入模板头部-->
+	<include file="common/head" />  
+	
+<div class="wrapper">
+	<div class="content">
+
+
+	
+<!-- 分享代码 --><div class="baidufenxiang" style="overflow:auto;margin-bottom:10px"><!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_bdhome"></a>
+<a class="bds_renren"></a>
+<a class="bds_kaixin001"></a>
+<a class="bds_douban"></a>
+<a class="bds_youdao"></a>
+<a class="bds_sqq"></a>
+<a class="bds_hi"></a>
+<a class="bds_baidu"></a>
+<a class="bds_qq"></a>
+<a class="bds_tqq"></a>
+<a class="bds_tsina"></a>
+<a class="bds_qzone"></a>
+<a class="bds_mshare"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=53164" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END --></div>
+<!-- 分享代码 -->
+	
+<ul class="excerpt thumb">
+		   
+		   <volist name='articles_all' id='vo'>
+		   
+			   	<li>
+					<a href="__MODULE__/Article/index/id/{$vo.id}" class="pic"><img src="__ROOT__{$vo.pic}" alt="{$vo.title}" /></a>
+						<h2 class="excerpt-tit">
+						<a href="__MODULE__/Article/index/id/{$vo.id}" >{$vo.title}</a>
+					   </h2>
+					<p class="excerpt-desc">{$vo.desc}</p>
+		
+					<div class="excerpt-time">	{$vo.time|date="m-d",###}</div>
+			   </li>
+			   
+		   </volist>	
+		   
+		   
+		   
+	</ul>
+
+<div class="paging">{$page}</div>
+
+</div>
+
+	<!--/引入模板右边栏-->
+	<include file="common/sidebar" />  
+	
+</div>
+
+	<!--/引入模板底部-->
+	<include file="common/footer" />  
+
+<script src="./style/jquery.min.js"></script> 
+
+
+<!-- 百度自动推送 -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = './style/push.js';        
+    }
+    else {
+        bp.src = './style/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+</body>
+</html>
+

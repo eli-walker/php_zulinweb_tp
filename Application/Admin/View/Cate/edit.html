@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+    <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" />
+    <script type="text/javascript" src="__PUBLIC__/js/libs/modernizr.min.js"></script>
+</head>
+<body>
+
+<!--/引入模板头部-->
+<include file="common/head" />   
+
+<div class="container clearfix">
+
+<!--/引入模板左部-->
+    <include file="common/left"/>
+    
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Index/index">首页</a>
+            <span class="crumb-step">&gt;</span>
+            <a class="crumb-name" href="/jscss/admin/design/">栏目管理</a>
+            <span class="crumb-step">&gt;</span><span>修改栏目</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red">*</i>栏目名称：</th>
+                                <td>
+                                    <input  name="id"  value="{$cates.id}" type="hidden">
+                                    <input class="common-text required" id="catename" name="catename" size="50" value="{$cates.catename}" type="text">
+                                
+                                </td>
+                            </tr>
+                           
+                            
+                            
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

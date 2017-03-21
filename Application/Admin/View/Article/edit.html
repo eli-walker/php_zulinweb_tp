@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+    <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" />
+    <script type="text/javascript" src="__PUBLIC__/js/libs/modernizr.min.js"></script>
+    <!--/引入百度ueditor-->
+    <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+</head>
+<body>
+
+<!--/引入模板头部-->
+<include file="common/head" />   
+
+<div class="container clearfix">
+
+<!--/引入模板左部-->
+    <include file="common/left"/>
+    
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Index/index">首页</a>
+            <span class="crumb-step">&gt;</span>
+            <a class="crumb-name" href="__CONTROLLER__/lst">文章管理</a>
+            <span class="crumb-step">&gt;</span><span>修改文章</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <input   name="id"  value="{$articles.id}" type="hidden">   <!--/存储文章的ID-->
+                    <input   name="pic"  value="{$articles.pic}" type="hidden"> <!--/存储缩略图路径-->                     
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red">*</i>文章标题：</th>
+                                <td>
+                                    <input class="common-text required"  name="title" size="50" value="{$articles.title}" type="text">
+                                </td>
+                            </tr>
+                           
+                            <tr>
+                                <th>文章描述：</th>
+                                <td>
+                                    <textarea rows="3" cols="50" name="desc" value="" >{$articles.desc}</textarea> 
+                                </td>
+                            </tr>
+                  
+                            <tr>
+                                <th>缩略图：</th>
+                                <td>
+                                	<if condition="$articles[pic] neq ''">
+                                		<img src="__ROOT__{$articles.pic}" height="50" />
+                                		<else/> 暂无缩略图
+                                	</if>
+                                       <input id="pic" name="pic" size="50" value="" type="file">
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><i class="require-red">*</i>所属栏目：</th>
+                                <td>
+                                   <select name="cateid"  value="" >
+                                   	 <option value="" >请选择栏目分类</option>
+                                   		<volist name="cates" id="co" >
+	                                   		<if condition="$articles[cateid] eq $co[id]">
+	                                			<option value="{$co.id}" selected = "selected">{$co.catename}</option>
+	                                		<else/><option value="{$co.id}">{$co.catename}</option>
+	                                		</if>                      			
+                                   		</volist>
+                                   </select>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><i class="require-red">*</i>文章内容：</th>
+                                <td>
+                                    <textarea id="ueditor-con"  name="content" value="">{$articles.content}</textarea> 
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+
+<!--/实例化百度ueditor编辑器，并设置默认高宽和id-->
+	<script type="text/javascript">
+		UE.getEditor('ueditor-con',{initialFrameWidth:1200,initialFrameHeigh:500,});
+	</script>
+
+
+</body>
+</html>

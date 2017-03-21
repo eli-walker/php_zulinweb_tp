@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+    <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" />
+    <script type="text/javascript" src="__PUBLIC__/js/libs/modernizr.min.js"></script>
+</head>
+<body>
+
+<!--/引入模板头部-->
+<include file="common/head" />   
+
+<div class="container clearfix">
+
+<!--/引入模板左部-->
+    <include file="common/left"/>
+
+    <div class="main-wrap">
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font">&#xe06b;</i><span>公告--快捷搜索。<span><a target="_blank" style="color:'black'; margin:0 20px;" href="http://www.baidu.com">百度</a></span></span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-title">
+                <h1>快捷操作</h1>
+            </div>
+            <div class="result-content">
+                <div class="short-wrap">
+                    <a href="__MODULE__/Article/add"><i class="icon-font">&#xe005;</i>新增文章</a>
+                    <a href="__MODULE__/Cate/add"><i class="icon-font">&#xe041;</i>新增栏目</a>
+                    <a href="__MODULE__/Link/add"><i class="icon-font">&#xe041;</i>新增链接</a>
+                    <a href="__MODULE__/Special/add"><i class="icon-font">&#xe041;</i>新增信息</a>
+                </div>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-title">
+                <h1>系统基本信息</h1>
+            </div>
+            <div class="result-content">
+                <ul class="sys-info-list">
+                    <li>
+                        <label class="res-lab">操作系统</label><span class="res-info">Winxp32</span>
+                    </li>
+                    <li>
+                        <label class="res-lab">运行环境</label><span class="res-info">Apache/PHP{$PHP_VERSION}</span>
+                    </li>
+                    <li>
+                        <label class="res-lab">框架版本</label><span class="res-info">ThinkPHP {$Think.version} </span>
+                    </li>
+                    <li>
+                        <label class="res-lab">设计版本</label><span class="res-info">V-0.1</span>
+                    </li>
+                    <li>
+                        <label class="res-lab">北京时间</label><span class="res-info">{$Think.now}</span>
+                    </li>
+                    <li>
+                        <label class="res-lab">服务器域名</label><span class="res-info">http://{$_SERVER['HTTP_HOST']}</span>
+                    </li>
+                    <li>
+                        <label class="res-lab">当前用户IP</label><span class="res-info">{$_SERVER['REMOTE_ADDR']}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-title">
+                <h1>使用帮助</h1>
+            </div>
+            <div class="result-content">
+                <ul class="sys-info-list">
+                    <li>
+                        <label class="res-lab">联系邮箱：</label><span class="res-info">eli_walker@foxmail.com</span>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

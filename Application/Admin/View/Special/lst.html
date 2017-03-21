@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+    <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" />
+    <script type="text/javascript" src="__PUBLIC__/js/libs/modernizr.min.js"></script>
+</head>
+<body>
+
+<!--/引入模板头部-->
+<include file="common/head" />   
+
+<div class="container clearfix">
+
+<!--/引入模板左部-->
+    <include file="common/left"/>
+        
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Index/index">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">预留信息</span></div>
+        </div>
+        <!--<div class="search-wrap">
+            <div class="search-content">
+                <form action="/jscss/admin/design/index" method="post">
+                    <table class="search-tab">
+                        <tr>
+                            <th width="120">选择分类:</th>
+                            <td>
+                                <select name="search-sort" id="">
+                                    <option value="">全部</option>
+                                    <option value="19">精品界面</option><option value="20">推荐界面</option>
+                                </select>
+                            </td>
+                            <th width="70">关键字:</th>
+                            <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
+                            <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>-->
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post" action="__CONTROLLER__/sort" >
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="__CONTROLLER__/add"><i class="icon-font"></i>新增信息</a>
+                    </div>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th>ID</th>
+                            <th>预留名字</th>
+                            <th>信息标题</th>
+                            <th>缩略图</th>
+                            <th>阅读次数</th>
+                            <th>操作</th>
+                        </tr>
+                        
+                     <volist name='specials' id='vo'>   
+                        <tr >
+                            <td width="5%">{$vo.id}</td>
+                            <td width="20%" title="{$vo.name}">{$vo.name}</td>
+                            <td width="30%" title="{$vo.title}">{$vo.title}</td>
+                           
+                            <td width="20%">
+	                             <if condition="$vo['pic'] neq ''">
+	                         		 <img src="__ROOT__{$vo.pic}" height="50" /> 
+	                           		<else/>暂无缩略图
+	                            </if>             
+                            </td>
+                            <td width="10%" title="{$vo.reads}">{$vo.read_times}</td>
+                            <td width="8%">
+                                <a class="link-update" href="__CONTROLLER__/edit/id/{$vo.id}">修改</a>
+                                <a class="link-del" href="__CONTROLLER__/del/id/{$vo.id}" onclick="return confirm('是否确定删除信息？')">删除</a>
+                            </td>
+                        </tr>
+                    </volist>
+                    
+                    </table>
+                    <div class="list-page"> {$page}</div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>
