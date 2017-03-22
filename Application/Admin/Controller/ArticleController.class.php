@@ -48,13 +48,13 @@ class ArticleController extends CommonController {
                    $this->error($upload->getError());
                 }else{
                   $this->success('上传成功！',U('lst'));// 上传成功 
-                 
+                   unlink(PIC_ROOTPATH.$_POST['pic']);   //删除原来存储的图片****图片路径要加上根路径'.'才能删除,即'./Public**'
                   $_POST['pic']=$info['pic']['savepath'].$info['pic']['savename'];  //将接收的图片路径保存至$_POST中，以方便直接create()
 
                 }
             }
 
-            unlink(PIC_ROOTPATH.$_POST['pic']);   //删除原来存储的图片****图片路径要加上根路径'.'才能删除,即'./Public**'
+          
             
             $_POST['time']=time();
              

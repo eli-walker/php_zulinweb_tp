@@ -12,5 +12,27 @@ class CateModel extends Model {
     );
    
     
+    public function catetree(){
+       $data=$this->select();
+       return $this->resort($data);
+    }
+    
+    public function resort($data,$parentid=0,$level=0){     //递归函数 添加栏目level排序
+        static $ret=array();
+        foreach ($data as $k=>$v)
+        {
+            if($v['parentid']==$parentid)
+            {
+                $v['level']=$level;
+                $ret[]=$v;
+                $this->resort($data,$v['id'],$level+1);
+            }
+        }
+       return $ret;
+    }
+    
+    
+    
+    
     
 }

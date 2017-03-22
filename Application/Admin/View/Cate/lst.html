@@ -48,28 +48,47 @@
                 <div class="result-title">
                     <div class="result-list">
                         <a href="__CONTROLLER__/add"><i class="icon-font"></i>新增栏目</a>
-                       <!-- <a id="updateOrd" href="javascript:void(0)"><i class="icon-font"></i>更新排序</a> -->
+                         <a  href=""><i class="icon-font"></i>批量删除</a>
+                        <a href=""><i class="icon-font"></i>更新排序</a>
                         <input class="icon-font" value='更新排序' type='submit' />
                     </div>
                 </div>
                 <div class="result-content">
                     <table class="result-tab" width="100%">
                         <tr>
+                            <th class="tc" width="5%"><input  name="" type="checkbox"></th>
                             <th>排序</th>
                             <th>ID</th>
                             <th>栏目名称</th>
+                            <th>栏目类型</th>
+                            <th>缩略图</th>
                             <th>操作</th>
                         </tr>
                         
                      <volist name='cateres' id='vo'>   
                         <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
                             <td width="5%">
                                 <input class="common-input sort-input" name="{$vo.id}" value="{$vo.sort}" type="text">
                             </td>
                             <td width="5%">{$vo.id}</td>
-                            <td title="{$vo.catename}">{$vo.catename}
+                            <td >{$vo['level']|str_repeat="————",###}{$vo.catename} </td>
+                              <td >								                            
+									 <switch name="vo.type">
+									    <case value="1">列表</case>
+									    <case value="2">单页</case>
+									    <case value="3">留言</case>
+									    <case value="4">招聘</case>
+									    <default />暂无
+									</switch>
+                            
+                              </td>
+                            <td >
+	                            <if condition="$vo['pic'] neq ''">
+	                         		 <img src="__ROOT__{$vo.pic}" height="50" /> 
+	                           		<else/>暂无缩略图
+	                            </if>             
                             </td>
-                
                             <td width="20%">
                                 <a class="link-update" href="__CONTROLLER__/edit/id/{$vo.id}">修改</a>
                                 <a class="link-del" href="__CONTROLLER__/del/id/{$vo.id}" onclick="return confirm('是否确定删除栏目？')">删除</a>
@@ -78,7 +97,7 @@
                     </volist>
                     
                     </table>
-                   <!-- <div class="list-page"> 2 条 1/1 页</div> -->
+                   <div class="list-page">{$page}</div> 
                 </div>
             </form>
         </div>
