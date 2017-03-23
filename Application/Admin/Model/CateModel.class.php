@@ -31,7 +31,11 @@ class CateModel extends Model {
        return $ret;
     }
     
-    
+    public function _before_delete($options){
+      //单独删除时 id的值是一个字符 ，一个单独的id
+      $id=$options['where']['id'];
+      
+    }
     
     
     

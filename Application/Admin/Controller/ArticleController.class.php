@@ -15,7 +15,7 @@ class ArticleController extends CommonController {
     public function lst(){
         $article=D('ArticleView');
         $count= $article->count();// 查询满足要求的总记录数
-        $Page=new \Think\Page($count,8);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+        $Page=new \Think\Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
         $show=$Page->show();// 分页显示输出
         // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
         $articles=$article->order('id asc')->limit($Page->firstRow.','.$Page->listRows)->select();
@@ -73,7 +73,7 @@ class ArticleController extends CommonController {
             
         };
         
-        $cates=D('cate')->select();
+        $cates=D('cate')->catetree();
         $this->assign('cates',$cates);
         
         $this->display(); 
@@ -148,12 +148,6 @@ class ArticleController extends CommonController {
               }
     }
     
-    public function sort(){
-        $link=D('link');
-        foreach ($_POST as $id=>$sort){
-        $link->where(array('id'=>$id))->setField('sort',$sort);    
-        }
-        $this->success('更新排序成功！');
-    }
+   
     
 }

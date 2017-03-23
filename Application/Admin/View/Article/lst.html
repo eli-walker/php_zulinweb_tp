@@ -55,6 +55,8 @@
                         <tr>
                             <th>ID</th>
                             <th>文章标题</th>
+                            <th>文章作者</th>
+                             <th>是否推荐</th>
                             <th>缩略图</th>
                             <th>所属栏目</th>
                             <th>操作</th>
@@ -63,7 +65,13 @@
                      <volist name='articles' id='vo'>   
                         <tr>
                             <td width="5%">{$vo.id}</td>
-                            <td width="30%" title="{$vo.title}">{$vo.title}</td>
+                            <td width="10%" title="{$vo.title}">{$vo.title}</td>
+                            <td width="10%" title="{$vo.author}">{$vo.author}</td>
+                              <td width="10%" >
+	                              <if condition="$vo['rem'] eq '1'">推荐	
+	                               <else/> 未推荐
+	                              </if>
+                             </td>
                            <td >
                             <if condition="$vo['pic'] neq ''">
                          		 <img src="__ROOT__{$vo.pic}" height="50" /> 

@@ -37,32 +37,7 @@
                     <input   name="pic"  value="{$articles.pic}" type="hidden"> <!--/存储缩略图路径-->                     
                     <table class="insert-tab" width="100%">
                         <tbody>
-                            <tr>
-                                <th><i class="require-red">*</i>文章标题：</th>
-                                <td>
-                                    <input class="common-text required"  name="title" size="50" value="{$articles.title}" type="text">
-                                </td>
-                            </tr>
-                           
-                            <tr>
-                                <th>文章描述：</th>
-                                <td>
-                                    <textarea rows="3" cols="50" name="desc" value="" >{$articles.desc}</textarea> 
-                                </td>
-                            </tr>
-                  
-                            <tr>
-                                <th>缩略图：</th>
-                                <td>
-                                	<if condition="$articles[pic] neq ''">
-                                		<img src="__ROOT__{$articles.pic}" height="50" />
-                                		<else/> 暂无缩略图
-                                	</if>
-                                       <input id="pic" name="pic" size="50" value="" type="file">
-                                </td>
-                            </tr>
-                            
-                            <tr>
+                         <tr>
                                 <th><i class="require-red">*</i>所属栏目：</th>
                                 <td>
                                    <select name="cateid"  value="" >
@@ -76,6 +51,85 @@
                                    </select>
                                 </td>
                             </tr>
+                            
+                            <tr>
+                                <th><i class="require-red">*</i>文章标题：</th>
+                                <td>
+                                    <input class="common-text required"  name="title" size="50" value="{$articles.title}" type="text">
+                                </td>
+                            </tr>
+                           <tr>
+                                <th>文章作者：</th>
+                                <td>
+                                    <input class="common-text required"  name="author" size="50" value="{$articles.author}" type="text">
+                                </td>
+                            </tr>
+                              <tr>
+                                <th>关键词：</th>
+                                <td>
+                                    <input class="common-text required"  name="keywords" size="50" value="{$articles.keywords}" type="text">
+                                </td>
+                            </tr>
+              			    <tr>
+                                <th>文章描述：</th>
+                                <td>
+                                    <textarea rows="3" cols="50" name="desc" value="" >{$articles.desc}</textarea> 
+                                </td>
+                            </tr>
+                            
+                               <tr>
+                                <th><i class="require-red">*</i>文章类别：</th>
+                                <td>
+	                                <if condition="$articles[atype] eq 0">
+		                                <input class="common-text required"  name="atype" size="50" value="0" checked="checked" type="radio">列表
+		                                <else/><input class="common-text required"  name="atype" size="50" value="0"  type="radio">列表
+	                                </if> 
+	                                
+	                                <if condition="$articles[atype] eq 1">
+		                                <input class="common-text required"  name="atype" size="50" value="1" checked="checked" type="radio">车型
+		                                <else/> <input class="common-text required"  name="atype" size="50" value="1" type="radio">车型
+	                                </if> 
+	                               
+	                                <if condition="$articles[atype] eq 2">
+		                                <input class="common-text required"  name="atype" size="50" value="2" checked="checked" type="radio">招聘
+		                                <else/><input class="common-text required"  name="atype" size="50" value="2"  type="radio">招聘
+	                                </if>    
+	                               
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>附加选项：</th>
+                                <td>
+                                    	车型日租<input class="common-text required"  name="rizu" size="10" value="{$articles.rizu}" type="text">
+                                    	招聘人数<input class="common-text required"  name="num" size="10" value="{$articles.num}" type="text">
+                                </td>
+                            </tr>
+                            
+                            
+                            
+                            <tr>
+                                <th>是否推荐：</th>
+                                <td>
+                                	<if condition="$articles[rem] eq '1'">
+                                	<input class="check" name="rem" value="1" checked="checked" type="checkbox" >
+                                		<else/> <input class="check" name="rem" value="1" type="checkbox" >
+                                	</if>
+                                </td>
+                            </tr>
+                           
+                  
+                            <tr>
+                                <th>缩略图：</th>
+                                <td>
+                                	<if condition="$articles[pic] neq ''">
+                                		<img src="__ROOT__{$articles.pic}" height="50" />
+                                		<else/> 暂无缩略图
+                                	</if>
+                                       <input id="pic" name="pic" size="50" value="" type="file">
+                                </td>
+                            </tr>
+                            
+                           
                             
                             <tr>
                                 <th><i class="require-red">*</i>文章内容：</th>

@@ -7,8 +7,15 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
     <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" />
     <script type="text/javascript" src="__PUBLIC__/js/libs/modernizr.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script><!--/引入 jQuery-->
+    
+
+    
 </head>
 <body>
+
+
+
 
 <!--/引入模板头部-->
 <include file="common/head" />   
@@ -56,7 +63,7 @@
                 <div class="result-content">
                     <table class="result-tab" width="100%">
                         <tr>
-                            <th class="tc" width="5%"><input  name="" type="checkbox"></th>
+                            <th class="tc" width="5%" ><input id="checks" class="check" name="" type="checkbox" ></th>
                             <th>排序</th>
                             <th>ID</th>
                             <th>栏目名称</th>
@@ -67,7 +74,7 @@
                         
                      <volist name='cateres' id='vo'>   
                         <tr>
-                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td class="tc"><input class="check" name="id[]" value="59" type="checkbox" ></td>
                             <td width="5%">
                                 <input class="common-input sort-input" name="{$vo.id}" value="{$vo.sort}" type="text">
                             </td>
@@ -104,5 +111,21 @@
     </div>
     <!--/main-->
 </div>
+
+
+<script >
+		$(document).ready(function(){
+			  $("#checks").click(function(){
+			     if($("#checks").attr("checked")){
+			            $(".check").removeAttr("checked");}
+			          else{
+			            $(".check").attr("checked","checked");};    
+			  });
+		
+			});
+</script>
+
 </body>
 </html>
+
+

@@ -35,20 +35,67 @@
                 <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
                     <table class="insert-tab" width="100%">
                         <tbody>
+                        
+                                <tr>
+	                                <th><i class="require-red">*</i>所属栏目：</th>
+	                                <td>
+	                                   <select name="cateid">
+	                                   	    <volist name="cates" id="co" >
+		                                		
+		                                		<option value="{$co.id}">{$co['level']|str_repeat="—",###}{$co.catename}</option>
+		                                	              
+	                                   		</volist>
+	                                   </select>
+	                                </td>
+	                            <tr>
+                        
                             <tr>
                                 <th><i class="require-red">*</i>文章标题：</th>
                                 <td>
                                     <input class="common-text required"  name="title" size="50" value="" type="text">
                                 </td>
                             </tr>
-                           
+                            
                             <tr>
-                                <th>文章描述：</th>
+                                <th>文章作者：</th>
                                 <td>
-                                    <textarea rows="3" cols="50" name="desc"></textarea> 
+                                    <input class="common-text required"  name="author" size="50" value="" type="text">
                                 </td>
                             </tr>
-                            
+                            <tr>
+                                <th>关键词：</th>
+                                <td>
+                                    <input class="common-text required"  name="keywords" size="50" value="" type="text">
+                                </td>
+                            </tr>
+              			    <tr>
+                                <th>文章描述：</th>
+                                <td>
+                                    <textarea rows="3" cols="50" name="desc" value="" ></textarea> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>文章类别：</th>
+                                <td>
+                                    <input class="common-text required"  name="atype" size="50" checked="checked" value="0" type="radio">列表
+                                    <input class="common-text required"  name="atype" size="50" value="1" type="radio">车型
+                                    <input class="common-text required"  name="atype" size="50" value="2" type="radio">车型
+                                </td>
+                            </tr>
+                             <tr>
+                                <th>附加选项：</th>
+                                <td>
+                                    	车型日租<input class="common-text required"  name="rizu" size="10" value="" type="text">
+                                    	车型人数<input class="common-text required"  name="num" size="10" value="" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>是否推荐：</th>
+                                <td>
+                                    <input class="check" name="rem" value="1" type="checkbox" >
+                                </td>
+                            </tr>
+                           
                             <tr>
                                 <th>缩略图：</th>
                                 <td>
@@ -56,18 +103,7 @@
                                 </td>
                             </tr>
                             
-                            <tr>
-                                <th><i class="require-red">*</i>所属栏目：</th>
-                                <td>
-                                   <select name="cateid">
-                                   	 <option value="" >请选择栏目分类</option>
-                                   		<volist name="cates" id="co" >
-                                   			<option value="{$co.id}">{$co.catename}</option>
-                                   		</volist>
-                                   </select>
-                                </td>
-                            </tr>
-                            
+                                                        
                             <tr>
                                 <th><i class="require-red">*</i>文章内容：</th>
                                 <td>
