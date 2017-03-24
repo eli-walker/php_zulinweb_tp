@@ -21822,3 +21822,1234 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005030s ]
 INFO: [ app_end ] --END-- [ RunTime:0.005154s ]
 
+[ 2017-03-24T18:25:41+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Home/Page/index/cateid/84
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005260s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.008375s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 84 ) LIMIT 1   [ RunTime:0.000576s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 84 ) LIMIT 1   [ RunTime:0.000438s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 84 ) LIMIT 1   [ RunTime:0.000635s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=84 )  [ RunTime:0.000700s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000958s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=68 )  [ RunTime:0.000725s ]
+SQL: SELECT `id`,`catename`,`type` FROM `cs_cate` WHERE ( `parentid` = 0 ) AND ( `pc` = 1 ) ORDER BY sort asc  [ RunTime:0.001023s ]
+SQL: DESCRIBE cs_link [ RunTime:0.008949s ]
+SQL: SELECT `title`,`url` FROM `cs_link`  [ RunTime:0.000987s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 84 ) LIMIT 1   [ RunTime:0.000776s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 177 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 204 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 204 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 204 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 217 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011472s ]
+
+[ 2017-03-24T18:25:42+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Home/Ry/index/cateid/80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001751s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.008887s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 80 ) LIMIT 1   [ RunTime:0.000968s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 80 ) LIMIT 1   [ RunTime:0.000668s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 80 ) LIMIT 1   [ RunTime:0.000853s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=80 )  [ RunTime:0.000886s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000658s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=68 )  [ RunTime:0.000920s ]
+SQL: SELECT `id`,`catename`,`type` FROM `cs_cate` WHERE ( `parentid` = 0 ) AND ( `pc` = 1 ) ORDER BY sort asc  [ RunTime:0.001093s ]
+SQL: DESCRIBE cs_link [ RunTime:0.007643s ]
+SQL: SELECT `title`,`url` FROM `cs_link`  [ RunTime:0.000926s ]
+SQL: DESCRIBE cs_article [ RunTime:0.008980s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_article` WHERE ( cateid=80 ) LIMIT 1   [ RunTime:0.000950s ]
+SQL: SELECT * FROM `cs_article` WHERE ( cateid=80 ) ORDER BY time asc LIMIT 0,2   [ RunTime:0.002171s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 153 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 153 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 153 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 153 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 178 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 206 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 206 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 206 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 219 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 219 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002042s ]
+
+[ 2017-03-24T18:25:44+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Home/Message/index/cateid/86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.009045s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 86 ) LIMIT 1   [ RunTime:0.000805s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 86 ) LIMIT 1   [ RunTime:0.000750s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 86 ) LIMIT 1   [ RunTime:0.001091s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=86 )  [ RunTime:0.000923s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000529s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=68 )  [ RunTime:0.000825s ]
+SQL: SELECT `id`,`catename`,`type` FROM `cs_cate` WHERE ( `parentid` = 0 ) AND ( `pc` = 1 ) ORDER BY sort asc  [ RunTime:0.000760s ]
+SQL: DESCRIBE cs_link [ RunTime:0.008927s ]
+SQL: SELECT `title`,`url` FROM `cs_link`  [ RunTime:0.000814s ]
+SQL: DESCRIBE cs_message [ RunTime:0.009425s ]
+SQL: DESCRIBE cs_reply [ RunTime:0.008710s ]
+SQL: SELECT * FROM `cs_message` WHERE ( checked=1 )  [ RunTime:0.004609s ]
+SQL: SELECT * FROM `cs_reply`  [ RunTime:0.000916s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000364s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000493s ]
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 162 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 162 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 165 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 162 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 162 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 165 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 162 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 162 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 165 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 162 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 162 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 165 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 261 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 261 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 261 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 274 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 274 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002784s ]
+
+[ 2017-03-24T18:25:44+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Home/Message/code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006891s ]
+NOTIC: [8] Undefined variable: pres D:\PHP\xampp\htdocs\test\tp_pro3\Application\Home\Controller\CommonController.class.php 第 21 行.
+SQL: DESCRIBE cs_cate [ RunTime:0.025163s ]
+SQL: SELECT `id`,`catename`,`type` FROM `cs_cate` WHERE ( `parentid` = 0 ) AND ( `pc` = 1 ) ORDER BY sort asc  [ RunTime:0.001922s ]
+SQL: DESCRIBE cs_link [ RunTime:0.009666s ]
+SQL: SELECT `title`,`url` FROM `cs_link`  [ RunTime:0.000971s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003688s ]
+
+[ 2017-03-24T18:25:47+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Home/Page/index/cateid/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001685s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.007346s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 87 ) LIMIT 1   [ RunTime:0.001064s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 87 ) LIMIT 1   [ RunTime:0.000522s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 87 ) LIMIT 1   [ RunTime:0.000369s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=87 )  [ RunTime:0.000339s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=68 )  [ RunTime:0.000354s ]
+SQL: SELECT `id`,`catename`,`type` FROM `cs_cate` WHERE ( `parentid` = 0 ) AND ( `pc` = 1 ) ORDER BY sort asc  [ RunTime:0.000567s ]
+SQL: DESCRIBE cs_link [ RunTime:0.007199s ]
+SQL: SELECT `title`,`url` FROM `cs_link`  [ RunTime:0.000402s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 87 ) LIMIT 1   [ RunTime:0.000392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 177 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 204 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 204 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 204 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 217 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002941s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002894s ]
+
+[ 2017-03-24T18:25:51+08:00 ] 127.0.0.1 /test/tp_pro3/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004369s ]
+NOTIC: [8] Undefined variable: pres D:\PHP\xampp\htdocs\test\tp_pro3\Application\Home\Controller\CommonController.class.php 第 21 行.
+SQL: DESCRIBE cs_cate [ RunTime:0.007808s ]
+SQL: SELECT `id`,`catename`,`type` FROM `cs_cate` WHERE ( `parentid` = 0 ) AND ( `pc` = 1 ) ORDER BY sort asc  [ RunTime:0.001016s ]
+SQL: DESCRIBE cs_link [ RunTime:0.007296s ]
+SQL: SELECT `title`,`url` FROM `cs_link`  [ RunTime:0.000809s ]
+SQL: DESCRIBE cs_article [ RunTime:0.007872s ]
+SQL: SELECT `id`,`title`,`pic`,`rizu` FROM `cs_article` WHERE ( cateid=70 ) ORDER BY id desc LIMIT 3   [ RunTime:0.001027s ]
+SQL: SELECT `id`,`title`,`pic`,`rizu` FROM `cs_article` WHERE ( cateid=68 ) ORDER BY id desc  [ RunTime:0.000790s ]
+SQL: SELECT `id`,`title`,`time` FROM `cs_article` WHERE ( cateid=69 ) ORDER BY id desc LIMIT 3   [ RunTime:0.000839s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000451s ]
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 253 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 253 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 253 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 266 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 266 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008995s ]
+
+[ 2017-03-24T18:25:52+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Home/Carlist/index/cateid/68
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004143s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.013322s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 68 ) LIMIT 1   [ RunTime:0.001875s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 68 ) LIMIT 1   [ RunTime:0.000948s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 68 ) LIMIT 1   [ RunTime:0.000821s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=68 )  [ RunTime:0.001828s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=68 )  [ RunTime:0.002112s ]
+SQL: SELECT `id`,`catename`,`type` FROM `cs_cate` WHERE ( `parentid` = 0 ) AND ( `pc` = 1 ) ORDER BY sort asc  [ RunTime:0.001052s ]
+SQL: DESCRIBE cs_link [ RunTime:0.010133s ]
+SQL: SELECT `title`,`url` FROM `cs_link`  [ RunTime:0.003784s ]
+SQL: DESCRIBE cs_article [ RunTime:0.014761s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_article` WHERE ( cateid=68 ) LIMIT 1   [ RunTime:0.002061s ]
+SQL: SELECT * FROM `cs_article` WHERE ( cateid=68 ) ORDER BY time asc LIMIT 0,2   [ RunTime:0.001494s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined variable: contro D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 152 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 154 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 154 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 157 行.
+NOTIC: [8] Undefined variable: contro D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 152 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 154 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 154 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 157 行.
+NOTIC: [8] Undefined variable: contro D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 152 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 154 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 154 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 157 行.
+NOTIC: [8] Undefined variable: contro D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 152 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 154 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 154 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 157 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 182 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 210 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 210 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 210 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 223 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a48709bca952eced7bd8fa469ec83b13.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001934s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002620s ]
+
+[ 2017-03-24T18:27:16+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Home/Arlist/index/cateid/69
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006486s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.007802s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.000796s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.000419s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=69 )  [ RunTime:0.000401s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=69 )  [ RunTime:0.000401s ]
+SQL: SELECT `id`,`catename`,`type` FROM `cs_cate` WHERE ( `parentid` = 0 ) AND ( `pc` = 1 ) ORDER BY sort asc  [ RunTime:0.000419s ]
+SQL: DESCRIBE cs_link [ RunTime:0.006718s ]
+SQL: SELECT `title`,`url` FROM `cs_link`  [ RunTime:0.000356s ]
+SQL: DESCRIBE cs_article [ RunTime:0.006930s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_article` WHERE ( cateid=69 ) LIMIT 1   [ RunTime:0.000519s ]
+SQL: SELECT * FROM `cs_article` WHERE ( cateid=69 ) ORDER BY time asc LIMIT 0,4   [ RunTime:0.001065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined variable: contro D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\0b67f368aa9aa7c51ba19e336244a85a.php 第 146 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\0b67f368aa9aa7c51ba19e336244a85a.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\0b67f368aa9aa7c51ba19e336244a85a.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\0b67f368aa9aa7c51ba19e336244a85a.php 第 151 行.
+NOTIC: [8] Undefined variable: contro D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\0b67f368aa9aa7c51ba19e336244a85a.php 第 146 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\0b67f368aa9aa7c51ba19e336244a85a.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\0b67f368aa9aa7c51ba19e336244a85a.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\0b67f368aa9aa7c51ba19e336244a85a.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\0b67f368aa9aa7c51ba19e336244a85a.php 第 176 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\0b67f368aa9aa7c51ba19e336244a85a.php 第 198 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\0b67f368aa9aa7c51ba19e336244a85a.php 第 198 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\0b67f368aa9aa7c51ba19e336244a85a.php 第 198 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\0b67f368aa9aa7c51ba19e336244a85a.php 第 211 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\0b67f368aa9aa7c51ba19e336244a85a.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009770s ]
+
+[ 2017-03-24T18:27:17+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Home/Ry/index/cateid/80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010570s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.015402s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 80 ) LIMIT 1   [ RunTime:0.001909s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 80 ) LIMIT 1   [ RunTime:0.001824s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 80 ) LIMIT 1   [ RunTime:0.001557s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=80 )  [ RunTime:0.001555s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.001587s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=68 )  [ RunTime:0.001470s ]
+SQL: SELECT `id`,`catename`,`type` FROM `cs_cate` WHERE ( `parentid` = 0 ) AND ( `pc` = 1 ) ORDER BY sort asc  [ RunTime:0.001419s ]
+SQL: DESCRIBE cs_link [ RunTime:0.009752s ]
+SQL: SELECT `title`,`url` FROM `cs_link`  [ RunTime:0.001740s ]
+SQL: DESCRIBE cs_article [ RunTime:0.016785s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_article` WHERE ( cateid=80 ) LIMIT 1   [ RunTime:0.003262s ]
+SQL: SELECT * FROM `cs_article` WHERE ( cateid=80 ) ORDER BY time asc LIMIT 0,2   [ RunTime:0.001724s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 153 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 153 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 153 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 153 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 178 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 206 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 206 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 206 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 219 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 219 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011233s ]
+
+[ 2017-03-24T18:27:18+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Home/Page/index/cateid/84
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.006814s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 84 ) LIMIT 1   [ RunTime:0.000789s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 84 ) LIMIT 1   [ RunTime:0.000637s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 84 ) LIMIT 1   [ RunTime:0.000622s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=84 )  [ RunTime:0.000742s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000614s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=68 )  [ RunTime:0.000620s ]
+SQL: SELECT `id`,`catename`,`type` FROM `cs_cate` WHERE ( `parentid` = 0 ) AND ( `pc` = 1 ) ORDER BY sort asc  [ RunTime:0.000665s ]
+SQL: DESCRIBE cs_link [ RunTime:0.007161s ]
+SQL: SELECT `title`,`url` FROM `cs_link`  [ RunTime:0.000662s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 84 ) LIMIT 1   [ RunTime:0.000679s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000384s ]
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 177 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 204 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 204 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 204 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 217 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008729s ]
+
+[ 2017-03-24T18:27:19+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Home/Zplist/index/cateid/85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004971s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.007065s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 85 ) LIMIT 1   [ RunTime:0.000457s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 85 ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 85 ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=85 )  [ RunTime:0.000336s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=68 )  [ RunTime:0.000372s ]
+SQL: SELECT `id`,`catename`,`type` FROM `cs_cate` WHERE ( `parentid` = 0 ) AND ( `pc` = 1 ) ORDER BY sort asc  [ RunTime:0.000494s ]
+SQL: DESCRIBE cs_link [ RunTime:0.008468s ]
+SQL: SELECT `title`,`url` FROM `cs_link`  [ RunTime:0.000438s ]
+SQL: DESCRIBE cs_article [ RunTime:0.007175s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_article` WHERE ( cateid=85 ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: SELECT * FROM `cs_article` WHERE ( cateid=85 ) ORDER BY time asc LIMIT 0,2   [ RunTime:0.000658s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 176 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 218 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 218 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 218 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 231 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\a725b31f0cd63b69a227c1dbbab8aa77.php 第 231 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010636s ]
+
+[ 2017-03-24T18:27:21+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Home/Page/index/cateid/84
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004395s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.007035s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 84 ) LIMIT 1   [ RunTime:0.000549s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 84 ) LIMIT 1   [ RunTime:0.000894s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 84 ) LIMIT 1   [ RunTime:0.001205s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=84 )  [ RunTime:0.000713s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000424s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=68 )  [ RunTime:0.000457s ]
+SQL: SELECT `id`,`catename`,`type` FROM `cs_cate` WHERE ( `parentid` = 0 ) AND ( `pc` = 1 ) ORDER BY sort asc  [ RunTime:0.000483s ]
+SQL: DESCRIBE cs_link [ RunTime:0.006963s ]
+SQL: SELECT `title`,`url` FROM `cs_link`  [ RunTime:0.000433s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 84 ) LIMIT 1   [ RunTime:0.000465s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 148 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 151 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 177 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 204 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 204 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 204 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 217 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\68bce0ec7afdf8798ef65138f610dc8c.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003907s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003985s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010229s ]
+
+[ 2017-03-24T18:27:23+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Home/Ry/index/cateid/80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.007427s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 80 ) LIMIT 1   [ RunTime:0.000784s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 80 ) LIMIT 1   [ RunTime:0.000674s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( `id` = 80 ) LIMIT 1   [ RunTime:0.000650s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=80 )  [ RunTime:0.000634s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000624s ]
+SQL: SELECT * FROM `cs_cate` WHERE ( parentid=68 )  [ RunTime:0.001041s ]
+SQL: SELECT `id`,`catename`,`type` FROM `cs_cate` WHERE ( `parentid` = 0 ) AND ( `pc` = 1 ) ORDER BY sort asc  [ RunTime:0.000930s ]
+SQL: DESCRIBE cs_link [ RunTime:0.006913s ]
+SQL: SELECT `title`,`url` FROM `cs_link`  [ RunTime:0.000644s ]
+SQL: DESCRIBE cs_article [ RunTime:0.007563s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cs_article` WHERE ( cateid=80 ) LIMIT 1   [ RunTime:0.000734s ]
+SQL: SELECT * FROM `cs_article` WHERE ( cateid=80 ) ORDER BY time asc LIMIT 0,2   [ RunTime:0.001173s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000261s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000376s ]
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 153 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 153 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 153 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 150 行.
+NOTIC: [8] Undefined variable: son3pid D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 153 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 178 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 206 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 206 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 206 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 219 行.
+NOTIC: [8] Undefined index: name D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Home\baf4f4cb3ce169f386291e98251f0b6c.php 第 219 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002438s ]
+
+[ 2017-03-24T18:27:31+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Article/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004556s ]
+SQL: DESCRIBE cs_article [ RunTime:0.008895s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.009146s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id LIMIT 1   [ RunTime:0.000690s ]
+SQL: SELECT Article.id AS id,Article.title AS title,Article.pic AS pic,Article.cateid AS cateid,Article.time AS time,Article.rem AS rem,Article.keywords AS keywords,Article.atype AS atype,Cate.catename AS catename FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id ORDER BY Article.id asc LIMIT 0,10   [ RunTime:0.001185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005897s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007602s ]
+
+[ 2017-03-24T18:27:36+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Article/lst/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004536s ]
+SQL: DESCRIBE cs_article [ RunTime:0.009383s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.008141s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id LIMIT 1   [ RunTime:0.000731s ]
+SQL: SELECT Article.id AS id,Article.title AS title,Article.pic AS pic,Article.cateid AS cateid,Article.time AS time,Article.rem AS rem,Article.keywords AS keywords,Article.atype AS atype,Cate.catename AS catename FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id ORDER BY Article.id asc LIMIT 20,10   [ RunTime:0.001183s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009784s ]
+
+[ 2017-03-24T18:27:38+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Article/lst/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003628s ]
+SQL: DESCRIBE cs_article [ RunTime:0.009580s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.008857s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id LIMIT 1   [ RunTime:0.000812s ]
+SQL: SELECT Article.id AS id,Article.title AS title,Article.pic AS pic,Article.cateid AS cateid,Article.time AS time,Article.rem AS rem,Article.keywords AS keywords,Article.atype AS atype,Cate.catename AS catename FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id ORDER BY Article.id asc LIMIT 30,10   [ RunTime:0.001627s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003307s ]
+
+[ 2017-03-24T18:27:40+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Article/lst/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001412s ]
+SQL: DESCRIBE cs_article [ RunTime:0.022805s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.007440s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id LIMIT 1   [ RunTime:0.000751s ]
+SQL: SELECT Article.id AS id,Article.title AS title,Article.pic AS pic,Article.cateid AS cateid,Article.time AS time,Article.rem AS rem,Article.keywords AS keywords,Article.atype AS atype,Cate.catename AS catename FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id ORDER BY Article.id asc LIMIT 20,10   [ RunTime:0.001409s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003095s ]
+
+[ 2017-03-24T18:27:43+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Article/lst/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001449s ]
+SQL: DESCRIBE cs_article [ RunTime:0.006817s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.007078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id LIMIT 1   [ RunTime:0.000538s ]
+SQL: SELECT Article.id AS id,Article.title AS title,Article.pic AS pic,Article.cateid AS cateid,Article.time AS time,Article.rem AS rem,Article.keywords AS keywords,Article.atype AS atype,Cate.catename AS catename FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id ORDER BY Article.id asc LIMIT 10,10   [ RunTime:0.001025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003530s ]
+
+[ 2017-03-24T18:27:46+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Article/edit/id/18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001556s ]
+SQL: DESCRIBE cs_article [ RunTime:0.006978s ]
+SQL: SELECT * FROM `cs_article` WHERE ( `id` = 18 ) LIMIT 1   [ RunTime:0.000693s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.007747s ]
+SQL: SELECT * FROM `cs_cate`  [ RunTime:0.001077s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Undefined index: desc D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 126 行.
+NOTIC: [8] Use of undefined constant atype - assumed 'atype' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 133 行.
+NOTIC: [8] Use of undefined constant atype - assumed 'atype' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 136 行.
+NOTIC: [8] Use of undefined constant atype - assumed 'atype' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 139 行.
+NOTIC: [8] Use of undefined constant rem - assumed 'rem' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 157 行.
+NOTIC: [8] Use of undefined constant pic - assumed 'pic' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006961s ]
+
+[ 2017-03-24T18:28:28+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Article/edit/id/18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002384s ]
+SQL: DESCRIBE cs_article [ RunTime:0.006907s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\PHP\xampp\htdocs\test\tp_pro3\ThinkPHP\Library\Think\Upload.class.php 第 167 行.
+NOTIC: [2] unlink(../Public/Uploads/2016-04-28/5720e25f1d53e.jpg) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\PHP\xampp\htdocs\test\tp_pro3\Application\Admin\Controller\ArticleController.class.php 第 104 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001061s ]
+SQL: SELECT * FROM `cs_article` WHERE ( `title` = '测试荣誉1' ) AND ( `id` <> '18' ) LIMIT 1   [ RunTime:0.013238s ]
+SQL: UPDATE `cs_article` SET `pic`='/Public/Uploads/2017-03-24/58d4f4ccaa9b3.jpg',`cateid`=80,`title`='测试荣誉1',`author`='',`keywords`='',`atype`=0,`rizu`=0,`num`='',`content`='&lt;p&gt;测试荣誉1测试荣誉1测试荣誉1&lt;/p&gt;' WHERE ( `id` = 18 ) [ RunTime:0.000618s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.023429s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007003s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.016515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.022554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002170s ]
+
+[ 2017-03-24T18:28:30+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Article/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004585s ]
+SQL: DESCRIBE cs_article [ RunTime:0.006946s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.006884s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id LIMIT 1   [ RunTime:0.000448s ]
+SQL: SELECT Article.id AS id,Article.title AS title,Article.pic AS pic,Article.cateid AS cateid,Article.time AS time,Article.rem AS rem,Article.keywords AS keywords,Article.atype AS atype,Cate.catename AS catename FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id ORDER BY Article.id asc LIMIT 0,10   [ RunTime:0.000750s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028663s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002496s ]
+
+[ 2017-03-24T18:28:30+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Article/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003905s ]
+SQL: DESCRIBE cs_article [ RunTime:0.007035s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.007523s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id LIMIT 1   [ RunTime:0.001020s ]
+SQL: SELECT Article.id AS id,Article.title AS title,Article.pic AS pic,Article.cateid AS cateid,Article.time AS time,Article.rem AS rem,Article.keywords AS keywords,Article.atype AS atype,Cate.catename AS catename FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id ORDER BY Article.id asc LIMIT 0,10   [ RunTime:0.001281s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002721s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007554s ]
+
+[ 2017-03-24T18:28:32+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Article/lst/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+SQL: DESCRIBE cs_article [ RunTime:0.007696s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.008058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id LIMIT 1   [ RunTime:0.000918s ]
+SQL: SELECT Article.id AS id,Article.title AS title,Article.pic AS pic,Article.cateid AS cateid,Article.time AS time,Article.rem AS rem,Article.keywords AS keywords,Article.atype AS atype,Cate.catename AS catename FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id ORDER BY Article.id asc LIMIT 10,10   [ RunTime:0.001270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001682s ]
+
+[ 2017-03-24T18:28:35+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Article/edit/id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001667s ]
+SQL: DESCRIBE cs_article [ RunTime:0.007841s ]
+SQL: SELECT * FROM `cs_article` WHERE ( `id` = 19 ) LIMIT 1   [ RunTime:0.000941s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.008249s ]
+SQL: SELECT * FROM `cs_cate`  [ RunTime:0.001170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant cateid - assumed 'cateid' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 99 行.
+NOTIC: [8] Undefined index: desc D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 126 行.
+NOTIC: [8] Use of undefined constant atype - assumed 'atype' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 133 行.
+NOTIC: [8] Use of undefined constant atype - assumed 'atype' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 136 行.
+NOTIC: [8] Use of undefined constant atype - assumed 'atype' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 139 行.
+NOTIC: [8] Use of undefined constant rem - assumed 'rem' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 157 行.
+NOTIC: [8] Use of undefined constant pic - assumed 'pic' D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007113s ]
+
+[ 2017-03-24T18:28:43+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Article/edit/id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001466s ]
+SQL: DESCRIBE cs_article [ RunTime:0.007041s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\PHP\xampp\htdocs\test\tp_pro3\ThinkPHP\Library\Think\Upload.class.php 第 167 行.
+NOTIC: [2] unlink(../Public/Uploads/2016-04-28/5720e284db8d7.jpg) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\PHP\xampp\htdocs\test\tp_pro3\Application\Admin\Controller\ArticleController.class.php 第 104 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001078s ]
+SQL: SELECT * FROM `cs_article` WHERE ( `title` = '测试荣誉2' ) AND ( `id` <> '19' ) LIMIT 1   [ RunTime:0.001195s ]
+SQL: UPDATE `cs_article` SET `pic`='/Public/Uploads/2017-03-24/58d4f4db0a89b.jpg',`cateid`=80,`title`='测试荣誉2',`author`='',`keywords`='',`atype`=0,`rizu`=0,`num`='',`content`='&lt;p&gt;测试荣誉2测试荣誉2测试荣誉2测试荣誉2测试荣誉2测试荣誉2&lt;/p&gt;' WHERE ( `id` = 19 ) [ RunTime:0.000622s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011823s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007008s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002236s ]
+
+[ 2017-03-24T18:28:44+08:00 ] 127.0.0.1 /test/tp_pro3/index.php/Admin/Article/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001464s ]
+SQL: DESCRIBE cs_article [ RunTime:0.009123s ]
+SQL: DESCRIBE cs_cate [ RunTime:0.007502s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id LIMIT 1   [ RunTime:0.000644s ]
+SQL: SELECT Article.id AS id,Article.title AS title,Article.pic AS pic,Article.cateid AS cateid,Article.time AS time,Article.rem AS rem,Article.keywords AS keywords,Article.atype AS atype,Cate.catename AS catename FROM cs_article Article LEFT JOIN cs_cate Cate ON Article.cateid=Cate.id ORDER BY Article.id asc LIMIT 0,10   [ RunTime:0.001118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+NOTIC: [8] Undefined index: author D:\PHP\xampp\htdocs\test\tp_pro3\Application\Runtime\Cache\Admin\3233ce5cce332a117b52d9b8831cbcfa.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002682s ]
+
