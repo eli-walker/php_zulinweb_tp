@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+    <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" />
+    <script type="text/javascript" src="__PUBLIC__/js/libs/modernizr.min.js"></script>
+     <script type="text/javascript" src="__PUBLIC__/js/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+
+<!--/引入模板头部-->
+<include file="common/head" />   
+
+<div class="container clearfix">
+
+<!--/引入模板左部-->
+    <include file="common/left"/>
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Index">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">留言管理</span></div>
+        </div>
+      <!-- <div class="search-wrap">
+            <div class="search-content">
+                <form action="/jscss/admin/design/index" method="post">
+                    <table class="search-tab">
+                        <tr>
+                            <th width="120">选择分类:</th>
+                            <td>
+                                <select name="search-sort" id="">
+                                    <option value="">全部</option>
+                                    <option value="19">精品界面</option><option value="20">推荐界面</option>
+                                </select>
+                            </td>
+                            <th width="70">关键字:</th>
+                            <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
+                            <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>-->
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-title">
+                  
+                    <div class="result-list">
+                        <a id="batchDel" href="javascript:void(0)"><input form="myform" formaction="__CONTROLLER__/bdel" type="submit" class="btn btn-primary btn2" value="批量删除" /></a>
+                      
+                    </div>
+                  
+           
+                </div>
+           
+               
+         
+                
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc" width="5%"><input class="allChoose" name="" id='check' type="checkbox"></th>
+                            
+                            <th>ID</th>
+                            <th>姓名</th>
+                            <th>手机号码</th>
+                            <th>电子邮箱</th>
+                            <th>审核状态</th>
+                            <th>操作</th>
+                        </tr>
+                        <volist name="list" id="vo">
+                        <tr>
+                            <td class="tc"><input name="ids[]" value="{$vo.id}" class="check" type="checkbox"></td>
+                            
+                            <td>{$vo.id}</td>
+                            <td>{$vo.nickname}</td>
+                            <td>
+                            {$vo.telephone}
+                            </td>
+                            <td>
+                             {$vo.email}
+                            </td>
+                            <td>
+                             <if condition="$vo['checked'] eq 1">         审核通过
+                             <else />      审核未通过
+                             </if>
+                            </td>
+                            <td>
+                                <a class="link-update" href="__CONTROLLER__/reply/id/{$vo.id}">回复</a>
+                                <a class="link-update" href="__CONTROLLER__/checked/id/{$vo.id}">审核</a>
+                                <a class="link-del" onclick="return confirm('确定删除吗？');" href="__CONTROLLER__/del/id/{$vo.id}">删除</a>
+                            </td>
+                        </tr>
+                        </volist>
+                    </table>
+                    <div class="list-page">{$page}</div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    $("#check").click(function(){
+        if($(this).attr("checked"))
+        {
+            $(".check").attr("checked","checked")
+        }else
+        {
+            $(".check").removeAttr("checked")
+        }
+    })
+</script>

@@ -46,7 +46,17 @@
                                     <input class="common-text required" name="password" size="50" value="{$admins.password}" type="text">
                                 </td>
                             </tr>
-                            
+                             <tr>
+                                <th><i class="require-red">*</i>所属角色：</th>
+                                <td>
+                                <select name="roleid">
+                                    <volist name="roles" id="vo">
+                                    <option <if condition="$adminres['roleid'] eq $vo['id']">selected="selected"</if> value="{$vo.id}">{$vo.rolename}</option>
+                                    </volist>
+                                </select>
+                                
+                                </td>
+                            </tr>
                             
                             <tr>
                                 <th></th>

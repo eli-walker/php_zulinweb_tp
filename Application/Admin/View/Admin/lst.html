@@ -55,6 +55,7 @@
                         <tr>
                             <th>ID</th>
                             <th>管理员名称</th>
+                            <th>管理员角色</th>
                             <th>操作</th>
                         </tr>
                         
@@ -62,6 +63,7 @@
                         <tr>
                             <td width="5%">{$vo.id}</td>
                             <td >{$vo.username}</td>
+                             <td>{$vo.rolename}</td>
                             <td width="20%">
                                 <a class="link-update" href="__CONTROLLER__/edit/id/{$vo.id}">修改</a>
                                 <a class="link-del" href="__CONTROLLER__/del/id/{$vo.id}" onclick="return confirm('是否确定删除栏目？')">删除</a>

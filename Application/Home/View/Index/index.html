@@ -1,116 +1,219 @@
-
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="applicable-device" content="pc">
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="viewport" content="width=device-width" />
-<link rel="stylesheet" type="text/css" media="screen" href="__PUBLIC__/style/style.css"  />
-<link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" />
-<title>MYSPACE--GUO</title><meta name="keywords" content="MYSPACE--GUO" />
-<meta name="description" content="MYSPACE--GUO" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>运泽汽车租赁</title>
+<meta name="keywords" content="运泽汽车租赁" />
+<meta name="description" content="运泽汽车租赁"/>
 
-<!-- 百度统计（G） -->
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?8fd40b00fe7dd51a546356362f0c923e";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+<meta name="Author" content="024" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<script type="text/javascript" src="__PUBLIC__/pc/style/urlredirect.js"></script>
+<LINK href="__PUBLIC__/pc/style/style.css" rel=stylesheet>
+<LINK href="__PUBLIC__/pc/style/jbox.css" rel=stylesheet>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/functions.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/validForm/FormValid.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jbox/jquery.jBox-2.3.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/search.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/menu.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jQselect.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/slides.min.jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jquery.touchSlider.js"></script>
+<script type="text/javascript"><!--ibanner-->
+
+$(document).ready(function () {
+	$(".main_visual").hover(function(){
+		$("#btn_prev,#btn_next").fadeIn()
+		},function(){
+		$("#btn_prev,#btn_next").fadeOut()
+		})
+	$dragBln = false;
+	$(".main_image").touchSlider({
+		flexible : true,
+		speed : 200,
+		btn_prev : $("#btn_prev"),
+		btn_next : $("#btn_next"),
+		paging : $(".flicking_con a"),
+		counter : function (e) {
+			$(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+		}
+	});
+	$(".main_image").bind("mousedown", function() {
+		$dragBln = false;
+	})
+	$(".main_image").bind("dragstart", function() {
+		$dragBln = true;
+	})
+	$(".main_image a").click(function() {
+		if($dragBln) {
+			return false;
+		}
+	})
+	timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	$(".main_visual").hover(function() {
+		clearInterval(timer);
+	}, function() {
+		timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	})
+	$(".main_image").bind("touchstart", function() {
+		clearInterval(timer);
+	}).bind("touchend", function() {
+		timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	})
+});
 </script>
-
-
+<script><!--pro-->
+		$(function(){
+			// Set starting slide to 1
+			var startSlide = 1;
+			// Get slide number if it exists
+			if (window.location.hash) {
+				startSlide = window.location.hash.replace('#','');
+			}
+			// Initialize Slides
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				generatePagination: true,
+				play: 0,
+				pause: 2500,
+				hoverPause: true,
+				// Get the starting slide
+				start: startSlide,
+				animationComplete: function(current){
+					// Set the slide number as a hash
+					//window.location.hash = '#' + current;
+				}
+			});
+		});
+</script>
+<!--[if IE 6]><script type="text/javascript" src="js/DD_belatedPNG.js"></script><![endif]-->
 </head>
-<body class="home blog">
-
-	<!--/引入模板头部-->
-	<include file="common/head" />  
-	
-<div class="wrapper">
-	<div class="content">
-
-
-	
-<!-- 分享代码 --><div class="baidufenxiang" style="overflow:auto;margin-bottom:10px"><!-- Baidu Button BEGIN -->
-<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
-<a class="bds_bdhome"></a>
-<a class="bds_renren"></a>
-<a class="bds_kaixin001"></a>
-<a class="bds_douban"></a>
-<a class="bds_youdao"></a>
-<a class="bds_sqq"></a>
-<a class="bds_hi"></a>
-<a class="bds_baidu"></a>
-<a class="bds_qq"></a>
-<a class="bds_tqq"></a>
-<a class="bds_tsina"></a>
-<a class="bds_qzone"></a>
-<a class="bds_mshare"></a>
-<span class="bds_more"></span>
-<a class="shareCount"></a>
+<body>
+<div class="fixed"> <a href="book.php" title="留言" class="barbook"></a> <a href="javascript:;" title="二维码" class="codepic"></a> <a href="javascript:;" title="返回顶部" class="backup"></a>
+  <div> <img src="__PUBLIC__/pc/images/qrcode.png" alt="这里是您的网站名称" class="code" /> </div>
 </div>
-<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=53164" ></script>
-<script type="text/javascript" id="bdshell_js"></script>
+<include file="Common/head" />
+<div class="clear"></div>
+<div class="banner">
+  <div class="main_visual">
+    
+
+    <div class="main_image">
+    
+      <ul>
+                        <li><span class="img_3" style="background:url(__PUBLIC__/pc/images/20150804112848-251193540.jpg) no-repeat top;"></span></li>
+                
+                          <li><span class="img_3" style="background:url(__PUBLIC__/pc/images/20150804112945-946058568.jpg) no-repeat top;"></span></li>
+                
+                          <li><span class="img_3" style="background:url(__PUBLIC__/pc/images/20150804112838-1533884976.jpg) no-repeat top;"></span></li>
+                
+              </ul>
+      <a href="javascript:;" id="btn_prev"></a> <a href="javascript:;" id="btn_next"></a> </div>
+  </div>
+</div>
+<div class="clear"></div>
+
+<div class="case">
+	<div class="fra1">
+   	  <div class="caseleft">
+       	<p class="name"><b>主要车型</b><span>main models</span></p>
+            <div class="casel-in">
+              大众宝来、马自达、华晨宝马、奥迪Q7、奥迪Q5、速腾迈腾、别克商务、吉利汽车、奔驰、凯迪拉克          </div>
+          <a class="case-more" title="查看更多" href="case.php">查看更多</a>
+      </div>
+      <div class="caseright">
+      		<div class="noticecon"><b>最新公告：</b>
+              <marquee scrollamount="2" scrolldelay="5" onMouseOut="this.start()" onMouseOver="this.stop()">
+              诚信为本：市场在变，诚信永远不变...              </marquee>
+            </div>
+                        <ul class="caseul">
+                  <volist name="mainres" id="vo">
+                       <li>
+	                	<a href="__MODULE__/Article/index/arid/{$vo.id}" title="车型：车型展示名称">
+	                	<img src="__ROOT__{$vo.pic}" alt="车型：{$vo.title}" width="215" height="161" />
+		                    <span>车型：{$vo.title}</span>
+		                    <p>日租：{$vo.rizu}元/天</p>
+	                	</a>
+               		 </li>
+                </volist>
+                       
+                            </ul>
+                  </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="product">
+<script type="text/javascript" src="__PUBLIC__/pc/js/jquery.lightbox-0.5.min.js"></script>
 <script type="text/javascript">
-document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+    $(function() {
+        $('.zoombut').lightBox();
+    });
 </script>
-<!-- Baidu Button END --></div>
-<!-- 分享代码 -->
-	
-<ul class="excerpt thumb">
-		   
-		   <volist name='articles_all' id='vo'>
-		   
-			   	<li>
-					<a href="__MODULE__/Article/index/id/{$vo.id}" class="pic"><img src="__ROOT__{$vo.pic}" alt="{$vo.title}" /></a>
-						<h2 class="excerpt-tit">
-						<a href="__MODULE__/Article/index/id/{$vo.id}" >{$vo.title}</a>
-					   </h2>
-					<p class="excerpt-desc">{$vo.desc}</p>
-		
-					<div class="excerpt-time">	{$vo.time|date="m-d",###}</div>
-			   </li>
-			   
-		   </volist>	
-		   
-		   
-		   
-	</ul>
-
-<div class="paging">{$page}</div>
-
+	<div class="fra1">
+    	<p class="pro-name"><b>车辆展示</b><span>Vehicles Show</span></p>
+        <div id="container">
+      <div id="example">
+        <div id="slides">
+          <div class="slides_container" >
+                                 <div class="slide">            
+               	<ul class="product-ul">
+                <volist name="carres" id="vo">
+            	                     <li>
+                        <a href="__MODULE__/Article/index/arid/{$vo.id}" title="车型：{$vo.title}">
+                        	<p class="casetitle" ><span title="车型：{$vo.title}" href="__PUBLIC__/pc/images/20150810101106-46672245394438504.jpg" class="zoombut"></span><span class="jianjie">车型：{$vo.title}</span> </p> 
+                            <img src="__ROOT__{$vo.pic}" width="245" height="184" alt="车型：{$vo.title}" />
+                            <p class="wor"><span>车型：{$vo.title}</span><label>日租：{$vo.rizu}元/天</label></p>
+                        </a>
+                     </li> 
+                   </volist>            
+            	</ul>
+              
+            </div>
+                        </div>
+          <a href="#" class="prev" title="prev">&nbsp;&nbsp;</a><a href="" class="next" title="next">&nbsp;</a> </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <a class="pro-more" href="product.php" title="查看更多">查看更多</a>
+    </div>
 </div>
-
-	<!--/引入模板右边栏-->
-	<include file="common/sidebar" />  
-	
+<div class="clear"></div>
+<div class="news">
+	<div class="fra">
+    	<div class="about-left">
+        	<p class="ab-name"><span>a b o u t&nbsp;&nbsp; u s</span><b>关于我们</b></p> 
+            <p class="ab-con">　　租车运泽网络，一流的百度产品推广服务运营商，致力于在互联网时代帮助中国企业进行营销方式的革命，并使他们在这场营销变革中抢占先机。　<br />
+　　运泽网络成立于2003年，现有员工2000多人，下设20多家子公司，业务覆盖河北、辽宁、吉林三省，提供域名注册、虚拟主机、企业邮局、网站建设 ...</p>
+			<a class="ab-more" href="about.php" title="查看更多">查看更多</a>
+        </div>
+        <div class="news-right">
+        	<p class="news-name"><span>n e w s</span><b>新闻资讯</b></p> 
+                         <ul class="news-ul">
+                         <volist name="arres" id="vo">
+                        	<li>
+                	<span class="num">0{$i}</span>
+                    <a href="__MODULE__/Article/index/arid/{$vo.id}" title="{$vo.title}">
+                    	<p>{$vo.title}</p>
+                        <span>{$vo.time|date="Y-m-d",###}</span>
+                    </a>
+                </li>
+                </volist>            
+                            </ul>
+                         <a class="news-more" href="news.php" title="查看更多">查看更多</a>
+        </div>
+    </div>
 </div>
+<div class="z-notice">
+	<a href="notice.php" title="租车须知">租车须知</a>
+	<img src="http://0001543.ks.panguweb.cn/upfile/ads/20150804152838-947160084.jpg" alt="租车" width="1000" height="250" />
+</div>
+<div class="clear"></div>
+<include file="Common/footer" />
 
-	<!--/引入模板底部-->
-	<include file="common/footer" />  
-
-<script src="./style/jquery.min.js"></script> 
-
-
-<!-- 百度自动推送 -->
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = './style/push.js';        
-    }
-    else {
-        bp.src = './style/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-</body>
+    </body>
 </html>
 

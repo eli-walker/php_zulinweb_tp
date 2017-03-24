@@ -1,0 +1,41 @@
+<div class="fyLeft">
+        
+                <div class="l_pro">
+      <div class="l_pro_t">{$selftop}</div>
+        <ul class="l_procon">
+        
+        
+        
+          <?php foreach($son2 as $k=>$v): 
+            $cateid=$v['id'];
+            if($contro){
+              $url="__MODULE__/carlist/index/cateid/$cateid";
+            }else{
+              $url="__CONTROLLER__/index/cateid/$cateid";
+            }
+          ?>
+
+          <li class="proOne"><a title="<?php echo $v['name'];?>" href="<?php echo $url;?>"><?php echo $v['name'];?></a>
+            
+            <ul>
+            <?php if($v['id']==$_GET['cateid'] || $v['id']==$son3pid):?>
+              <?php foreach($son3 as $k1=>$v1): ?>
+            <li><a style="padding-left:50px;" title="<?php echo $v1['name'];?>" href="__CONTROLLER__/index/cateid/<?php echo $v1['id'];?>"><?php echo $v1['name'];?></a></li>
+              <?php endforeach;?>
+          <?php endif;?>
+            </ul>
+
+          </li>
+        <?php endforeach;?>
+        </ul>
+                </div>
+               <div class="fl-contact">
+                  <div class="l_pro_t1">联系我们</div>
+                    <p><img width="200" height="98" alt="联系我们" src="__PUBLIC__/pc/images/cont.jpg"></p>
+                    <div class="fl-con">电话：{$Think.config.PHONE} <br>
+传真：{$Think.config.FAX} <br>
+地址：{$Think.config.ADDRESS} <br>
+邮箱：{$Think.config.EMAIL} </div>
+               </div> 
+
+      </div>

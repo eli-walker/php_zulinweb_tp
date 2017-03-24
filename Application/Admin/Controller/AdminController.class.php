@@ -10,9 +10,16 @@ class AdminController extends CommonController {
     }
     
     public function lst(){
-        $admins=D('admin');
-        $admins=$admins->order('id asc')->select();
-        $this->assign('admins',$admins);     
+        $admin=D('admin');
+        $where=1;
+        if($kw=I('kw')){
+            $where.=' AND username LIKE "%'.$kw.'%"';
+        }
+        
+        $list = $admin->field('a.id,a.username,b.rolename')->alias('a')->join('LEFT JOIN cs_role b ON a.roleid=b.id')->where($where)->select();
+        $this->assign('admins',$list);// 赋值数据集
+
+
         $this->display();
     }
     
@@ -33,7 +40,9 @@ class AdminController extends CommonController {
             return;
             
         };
-        
+        $role=D('role');
+        $roles=$role->select();
+        $this->assign('roles',$roles);
         $this->display();
     }
     
@@ -48,6 +57,9 @@ class AdminController extends CommonController {
               return;
         }
         
+        $role=D('role');
+        $roles=$role->select();
+        $this->assign('roles',$roles);
         $admins=$admins->find(I('id'));
         $this->assign('admins',$admins);
         

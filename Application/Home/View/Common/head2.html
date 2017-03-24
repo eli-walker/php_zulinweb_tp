@@ -1,0 +1,39 @@
+<div class="head">
+  <div class="headtop">
+      <div class="fra1">
+          <a title="这里是您的网站名称" href="index.php"><img alt="这里是您的网站名称" src="__PUBLIC__/pc/images/logo.png"></a>
+            <div class="head-right">
+            <span><font>租车<br>热线 </font><label>+86-0000-96877</label></span>
+            <div class="search">
+               <form action="__MODULE__/Search/" method="get" name="search" id="search">
+               
+                <input type="text" value="请输入搜索关键词" id="kws" name="kws" class="text pngFix">
+                <div class="select pngFix">
+                 <select id="rid" style="display: none" name="cateid">
+                                         <option value="69" selected="selected">新闻资讯</option>
+                                         <option value="68" >车辆展示</option>
+                                         <option value="70" >主要车型</option>
+                                         <option value="80" >资质荣誉</option>
+                                     </select>
+                </div>
+                <input type="submit" value="" class="button" title="搜索">
+            </form>
+            <script type="text/javascript">
+                jQuery(document).ready(function() {
+                    jQuery("#rid").selectbox();
+                });
+            </script> 
+            </div>
+            </div>
+        </div>
+    </div>
+  <div class="nav">
+      <ul>
+          <li><a title="网站首页" href="index.php" class="">网站首页</a></li>
+          <volist name="navres" id="vo">
+          <li><a title="关于我们" href="__MODULE__/<if condition="$vo['type'] eq 1">Arlist<elseif condition="$vo['type'] eq 2"/>Page<elseif condition="$vo['type'] eq 3"/>Message<elseif condition="$vo['type'] eq 4"/>Zplist<elseif condition="$vo['type'] eq 5"/>Carlist<elseif condition="$vo['type'] eq 6"/>Ry<elseif condition="$vo['type'] eq 7"/>Job</if>/index/cateid/{$vo.id}" class="">{$vo.name}</a></li>
+          </volist>
+      </ul>
+    </div>
+    
+</div>

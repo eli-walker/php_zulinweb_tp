@@ -1,0 +1,53 @@
+<div class="foot">
+  <div class="foot-map">
+      <div class="foot-mleft">
+          <div class="site">网站地图（<a target="_blank" href="sitemap.xml">xml</a> / <a target="_blank" href="sitemap.html">html</a>）</div>        
+            <ul> 
+            <li>  
+            <a title="网站首页" href="__APP__">网站首页</a> 
+             <volist name="navres" id="vo" key="k"> 
+             <?php if($k<4):?>
+             <a title="{$vo.name}" href="__MODULE__/<if condition="$vo['type'] eq 1">Arlist<elseif condition="$vo['type'] eq 2"/>Page<elseif condition="$vo['type'] eq 3"/>Message<elseif condition="$vo['type'] eq 4"/>Zplist<elseif condition="$vo['type'] eq 5"/>Carlist<elseif condition="$vo['type'] eq 6"/>Ry<elseif condition="$vo['type'] eq 7"/>Job</if>/index/cateid/{$vo.id}" class="">{$vo.catename}</a>
+           <?php endif;?>
+             </volist>
+              </li>                                                                                                                                                                                    
+             <li>             
+                 <volist name="navres" id="vo" key="k"> 
+             <?php if($k>3&&$k<8):?>
+             <a title="{$vo.catename}" href="__MODULE__/<if condition="$vo['type'] eq 1">Arlist<elseif condition="$vo['type'] eq 2"/>Page<elseif condition="$vo['type'] eq 3"/>Message<elseif condition="$vo['type'] eq 4"/>Zplist<elseif condition="$vo['type'] eq 5"/>Carlist<elseif condition="$vo['type'] eq 6"/>Ry<elseif condition="$vo['type'] eq 7"/>Job</if>/index/cateid/{$vo.id}" class="">{$vo.catename}</a>
+           <?php endif;?>
+             </volist>                                                                                                              
+             
+             </li>
+            
+             <li>  
+                                                                                                                                                                                                                                       
+             <volist name="navres" id="vo" key="k"> 
+             <?php if($k>7):?>
+             <a title="{$vo.name}" href="__MODULE__/<if condition="$vo['type'] eq 1">Arlist<elseif condition="$vo['type'] eq 2"/>Page<elseif condition="$vo['type'] eq 3"/>Message<elseif condition="$vo['type'] eq 4"/>Zplist<elseif condition="$vo['type'] eq 5"/>Carlist<elseif condition="$vo['type'] eq 6"/>Ry<elseif condition="$vo['type'] eq 7"/>Job</if>/index/cateid/{$vo.id}" class="">{$vo.catename}</a>
+           <?php endif;?>
+             </volist>
+                                      </li>
+      
+        
+            </ul>
+        </div>
+        <div class="foot-tel"><p>热线电话<br><label>{$Think.config.PHONE} </label></p><span>7x24小时全国客服热线，全年无休</span></div>
+        <p class="foot-er"><img width="123" height="121" alt="" src="http://0001543.ks.panguweb.cn/images/er.gif"><br>扫一扫关注我们</p>
+  </div>
+  <div class="clear"></div>
+  <div class="footlink">
+    <b class="name">友情链接： </b>
+    <div class="linka"> 
+              <volist name="linkres" id="vo">
+              <a target="_blank" href="{$vo.url}">{$vo.title}</a>
+              </volist>
+    </div>
+  </div>
+    <div class="foot-con">
+        <div class="foot-left">电话：{$Think.config.PHONE}     传真：{$Think.config.FAX}     地址：{$Think.config.ADDRESS}     版权所有：{$Think.config.COPY}<br>
+    技术支持：<a title="运泽网络－提供基于互联网的全套解决方案" target="_blank" href="">运泽网络</a><a title="运泽网络" target="_blank" href="">运泽网络</a>ICP备案编号：<a target="_blank" title="备********号" href="http://www.miitbeian.gov.cn/">备********号</a></div>
+    <div class="newsshare"><div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1461319439588"><a title="分享到新浪微博" data-cmd="tsina" class="bds_tsina" href="#"></a><a title="分享到腾讯微博" data-cmd="tqq" class="bds_tqq" href="#"></a><a title="分享到QQ好友" data-cmd="sqq" class="bds_sqq" href="#"></a><a href="#" title="分享到百度新首页" data-cmd="bdhome" class="bds_bdhome"></a></div>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></div>
+</div>
+</div>

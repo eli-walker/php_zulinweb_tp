@@ -19,8 +19,47 @@ class AdminModel extends Model {
   
         
     );
-   
+  
+    public function getpri($roleid){
+        $role=D('role');
+        $pri=D('privilege');
+        $role->field('rolename,pri_id_list')->find($roleid);
+        session('rolename',$role->rolename);
+        if($role->pri_id_list=='*'){
+            session('privilege','*');
+            $menu=$pri->where("parentid=0")->select();
+            foreach ($menu as $k => $v) {
+                $menu[$k]['sub']=$pri->where('parentid='.$v['id'])->select();
+            }
     
+            session('menu',$menu);
+    
+        }else{
+            //Admin/Admin/add,Admin/Article/add
+            	
+            $pris=$pri->field('id,parentid,pri_name,mname,cname,aname,CONCAT(mname,"/",cname,"/",aname) url')->where("id IN({$role->pri_id_list})")->select();
+            $_pris=array();
+            $menu=array();
+            foreach($pris as $k=>$v){
+                $_pris[]=$v['url'];
+                if($v['parentid']==0){
+                    $menu[]=$v;
+                }
+            }
+            session('privilege',$_pris);
+            foreach ($menu as $k => $v) {
+                foreach ($pris as $k1 => $v1) {
+                    if($v1['parentid']==$v['id']){
+                        $menu[$k]['sub'][]=$v1;
+                    }
+                    	
+                }
+            }
+    
+            session('menu',$menu);
+        }
+    
+    }
     public function login()
     {
        

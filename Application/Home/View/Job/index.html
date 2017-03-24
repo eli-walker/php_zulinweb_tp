@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>人才招聘_这里是您的网站名称</title>
+<meta name="keywords" content="这里是您的网站名称" />
+<meta name="description" content="这里是您的网站名称"/>
+
+<meta name="Author" content="024" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<script type="text/javascript" src="__PUBLIC__/pc/style/urlredirect.js"></script>
+<LINK href="__PUBLIC__/pc/style/style.css" rel=stylesheet>
+<LINK href="__PUBLIC__/pc/style/jbox.css" rel=stylesheet>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/functions.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/validForm/FormValid.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jbox/jquery.jBox-2.3.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/search.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/menu.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jQselect.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/slides.min.jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jquery.touchSlider.js"></script>
+<script type="text/javascript"><!--ibanner-->
+
+$(document).ready(function () {
+	$(".main_visual").hover(function(){
+		$("#btn_prev,#btn_next").fadeIn()
+		},function(){
+		$("#btn_prev,#btn_next").fadeOut()
+		})
+	$dragBln = false;
+	$(".main_image").touchSlider({
+		flexible : true,
+		speed : 200,
+		btn_prev : $("#btn_prev"),
+		btn_next : $("#btn_next"),
+		paging : $(".flicking_con a"),
+		counter : function (e) {
+			$(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+		}
+	});
+	$(".main_image").bind("mousedown", function() {
+		$dragBln = false;
+	})
+	$(".main_image").bind("dragstart", function() {
+		$dragBln = true;
+	})
+	$(".main_image a").click(function() {
+		if($dragBln) {
+			return false;
+		}
+	})
+	timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	$(".main_visual").hover(function() {
+		clearInterval(timer);
+	}, function() {
+		timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	})
+	$(".main_image").bind("touchstart", function() {
+		clearInterval(timer);
+	}).bind("touchend", function() {
+		timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	})
+});
+</script>
+<script><!--pro-->
+		$(function(){
+			// Set starting slide to 1
+			var startSlide = 1;
+			// Get slide number if it exists
+			if (window.location.hash) {
+				startSlide = window.location.hash.replace('#','');
+			}
+			// Initialize Slides
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				generatePagination: true,
+				play: 0,
+				pause: 2500,
+				hoverPause: true,
+				// Get the starting slide
+				start: startSlide,
+				animationComplete: function(current){
+					// Set the slide number as a hash
+					//window.location.hash = '#' + current;
+				}
+			});
+		});
+</script>
+<!--[if IE 6]><script type="text/javascript" src="js/DD_belatedPNG.js"></script><![endif]-->
+</head>
+<body>
+<div class="fixed"> <a href="book.php" title="留言" class="barbook"></a> <a href="javascript:;" title="二维码" class="codepic"></a> <a href="javascript:;" title="返回顶部" class="backup"></a>
+  <div> <img src="http://0001543.ks.panguweb.cn/upfile/qr/qrcode.png" alt="这里是您的网站名称" class="code" /> </div>
+</div>
+<include file="Common/head" />
+<script type="text/javascript">
+function ckvaild (inp) {
+	$.ajax({type:"GET", url:"http://0001543.ks.panguweb.cn/ajax.php?r="+Math.random()+'&action=ckvaild&vaild='+inp.value, dataType:"text",async:false,success:function (msg){
+		r = msg;
+	}}); 
+	if (r==0) {
+		$("#verify").attr("src",'../valid.php?rand='+Math.random()*5);
+		return false;
+	} else {
+		return true;
+	}
+}
+</script>
+<div class="fy" style=" background:url(http://0001543.ks.panguweb.cn/upfile/ads/20150804113438-369103644.jpg) center top no-repeat;">
+    <div class="fra">
+  <include file="Common/left" />
+  <div class="fyRight">
+      <div class="title"> <span class="fl">{$selftop}</span> <span class="fr">当前位置：<a href="__APP__" title="首页">首页</a> > 
+                        <volist name="pres" id="vo">
+                        <if condition="$i != count($pres)">
+                        <a href="__MODULE__/<if condition="$vo['type'] eq 1">Arlist<elseif condition="$vo['type'] eq 2"/>Page<elseif condition="$vo['type'] eq 3"/>Message<elseif condition="$vo['type'] eq 4"/>Zplist<elseif condition="$vo['type'] eq 5"/>Carlist<elseif condition="$vo['type'] eq 6"/>Ry<elseif condition="$vo['type'] eq 7"/>Job</if>/index/cateid/{$vo.id}">{$vo.name}</a> &gt;
+                        <else />
+                        <font>{$vo.name}</font>
+                        </if>
+                        </volist>
+                        </span></div>
+      <div class="hrfra">
+           <form action="" id="hrform" name="hrform" method="post">
+        <table width="95%" cellspacing="0" cellpadding="3" border="0" align="center" class="hr"> 
+            <tbody><tr>
+            <td height="40" align="center" class="bord" colspan="4"><h2>求职表</h2></td>
+            </tr>
+            <tr>
+            <td height="25" align="right" class="bord"><span class="c_red">*</span>应聘职位：</td>
+            <td height="25" align="left" class="bord" colspan="3">
+            <input type="text" value="{$title}" readonly="readonly" maxlength="30" size="50" style="color:#999" name="title">
+            </td>
+            </tr>
+            <tr>
+            <td height="25" align="right" class="bord"><span class="c_red">*</span>真实姓名：</td>
+            <td height="25" align="left" class="bord">
+            <input type="text" errmsg="请输入真实姓名！" valid="required" maxlength="30" size="15" name="name">
+            </td>
+            <td height="25" align="right" class="bord">性别：</td>
+            <td height="25" align="left" class="bord">
+            <input type="radio" checked="checked" value="男" name="sex">
+            男&#12288;
+            <input type="radio" value="女" name="sex">
+            女 </td>
+            </tr>
+            <tr>
+            <td width="14%" height="25" align="right" class="bord">民族：</td>
+            <td width="27%" height="25" align="left" class="bord">
+            <select name="nation">
+            <option value="">---请选择---</option>
+            <option value="汉族">汉族</option>
+            <option value="蒙古族">蒙古族</option>
+            <option value="回族">回族</option>
+            <option value="藏族">藏族</option>
+            <option value="维吾尔族">维吾尔族</option>
+            <option value="苗族">苗族</option>
+            <option value="彝族">彝族</option>
+            <option value="壮族">壮族</option>
+            <option value="布依族">布依族</option>
+            <option value="朝鲜族">朝鲜族</option>
+            <option value="满族">满族</option>
+            <option value="侗族">侗族</option>
+            <option value="瑶族">瑶族</option>
+            <option value="白族">白族</option>
+            <option value="土家族">土家族</option>
+            <option value="哈尼族">哈尼族</option>
+            <option value="哈萨克族">哈萨克族</option>
+            <option value="傣族">傣族</option>
+            <option value="黎族">黎族</option>
+            <option value="傈僳族">傈僳族</option>
+            <option value="佤族">佤族</option>
+            <option value="畲族">畲族</option>
+            <option value="高山族">高山族</option>
+            <option value="拉祜族">拉祜族</option>
+            <option value="水族">水族</option>
+            <option value="东乡族">东乡族</option>
+            <option value="纳西族">纳西族</option>
+            <option value="景颇族">景颇族</option>
+            <option value="柯尔克孜族">柯尔克孜族</option>
+            <option value="土族">土族</option>
+            <option value="达斡尔族">达斡尔族</option>
+            <option value="仡佬族">仡佬族</option>
+            <option value="羌族">羌族</option>
+            <option value="布朗族">布朗族</option>
+            <option value="撒拉族">撒拉族</option>
+            <option value="毛难族">毛难族</option>
+            <option value="仫佬族">仫佬族</option>
+            <option value="锡伯族">锡伯族</option>
+            <option value="阿昌族">阿昌族</option>
+            <option value="普米族">普米族</option>
+            <option value="塔吉克族">塔吉克族</option>
+            <option value="怒族">怒族</option>
+            <option value="乌兹别克族">乌兹别克族</option>
+            <option value="俄罗斯族">俄罗斯族</option>
+            <option value="鄂温克族">鄂温克族</option>
+            <option value="崩龙族">崩龙族</option>
+            <option value="保安族">保安族</option>
+            <option value="裕固族">裕固族</option>
+            <option value="京族">京族</option>
+
+            <option value="塔塔尔族">塔塔尔族</option>
+            <option value="独龙族">独龙族</option>
+            <option value="鄂伦春族">鄂伦春族</option>
+            <option value="赫哲族">赫哲族</option>
+            <option value="门巴族">门巴族</option>
+            <option value="珞巴族">珞巴族</option>
+            </select>
+            </td>
+            <td width="17%" height="25" align="right" class="bord">出生日期：</td>
+            <td width="42%" height="25" align="left" class="bord">
+            <input type="text" size="15" name="age"> </td>
+            </tr>
+            <tr>
+            <td width="14%" height="25" align="right" class="bord">婚姻状况：</td>
+            <td width="27%" height="25" align="left" class="bord">
+            <select name="marry">
+            <option value="">---请选择---</option>
+            <option value="未婚">未婚</option>
+            <option value="已婚">已婚</option>
+            </select>
+            </td>
+            <td width="17%" height="25" align="right" class="bord">有无子女：</td>
+            <td width="42%" height="25" align="left" class="bord">
+            <select name="child">
+            <option value="">---请选择---</option>
+            <option value="有">有</option>
+            <option value="无">无</option>
+            </select>
+            </td>
+            </tr>
+            <tr>
+            <td width="14%" height="25" align="right" class="bord">籍贯：</td>
+            <td width="27%" height="25" align="left" class="bord">
+            <select name="bplace">
+            <option value="">---请选择---</option>
+            <option value="北京市">北京市</option>
+            <option value="天津市">天津市</option>
+            <option value="河北省">河北省</option>
+            <option value="山西省">山西省</option>
+            <option value="内蒙古">内蒙古</option>
+            <option value="辽宁省">辽宁省</option>
+            <option value="吉林省">吉林省</option>
+            <option value="黑龙江">黑龙江</option>
+            <option value="上海市">上海市</option>
+            <option value="江苏省">江苏省</option>
+            <option value="浙江省">浙江省</option>
+            <option value="安徽省">安徽省</option>
+            <option value="福建省">福建省</option>
+            <option value="江西省">江西省</option>
+            <option value="山东省">山东省</option>
+            <option value="河南省">河南省</option>
+            <option value="湖北省">湖北省</option>
+            <option value="湖南省">湖南省</option>
+            <option value="广东省">广东省</option>
+            <option value="广  西">广  西</option>
+            <option value="海南省">海南省</option>
+            <option value="重庆市">重庆市</option>
+            <option value="四川省">四川省</option>
+            <option value="贵州省">贵州省</option>
+            <option value="云南省">云南省</option>
+            <option value="西  藏">西  藏</option>
+            <option value="陕西省">陕西省</option>
+            <option value="甘肃省">甘肃省</option>
+            <option value="青海省">青海省</option>
+            <option value="宁  夏">宁  夏</option>
+            <option value="新  疆">新  疆</option>
+            <option value="台湾省">台湾省</option>
+            <option value="香  港">香  港</option>
+            <option value="澳  门">澳  门</option>
+            </select>
+            </td>
+            <td width="17%" height="25" align="right" class="bord">户口所在地：</td>
+            <td width="42%" height="25" align="left" class="bord">
+            <select name="address">
+            <option value="">---请选择---</option>
+            <option value="北京市">北京市</option>
+            <option value="天津市">天津市</option>
+            <option value="河北省">河北省</option>
+            <option value="山西省">山西省</option>
+            <option value="内蒙古">内蒙古</option>
+            <option value="辽宁省">辽宁省</option>
+            <option value="吉林省">吉林省</option>
+            <option value="黑龙江">黑龙江</option>
+            <option value="上海市">上海市</option>
+            <option value="江苏省">江苏省</option>
+            <option value="浙江省">浙江省</option>
+            <option value="安徽省">安徽省</option>
+            <option value="福建省">福建省</option>
+            <option value="江西省">江西省</option>
+            <option value="山东省">山东省</option>
+            <option value="河南省">河南省</option>
+            <option value="湖北省">湖北省</option>
+            <option value="湖南省">湖南省</option>
+            <option value="广东省">广东省</option>
+            <option value="广  西">广  西</option>
+            <option value="海南省">海南省</option>
+            <option value="重庆市">重庆市</option>
+            <option value="四川省">四川省</option>
+            <option value="贵州省">贵州省</option>
+            <option value="云南省">云南省</option>
+            <option value="西  藏">西  藏</option>
+            <option value="陕西省">陕西省</option>
+            <option value="甘肃省">甘肃省</option>
+            <option value="青海省">青海省</option>
+            <option value="宁  夏">宁  夏</option>
+            <option value="新  疆">新  疆</option>
+            <option value="台湾省">台湾省</option>
+            <option value="香  港">香  港</option>
+            <option value="澳  门">澳  门</option>
+            </select>
+            </td>
+            </tr>
+            <tr>
+            <td width="14%" height="25" align="right" class="bord">学历：</td>
+            <td height="25" align="left" class="bord">
+            <select name="education">
+            <option selected="selected" value="">---请选择---</option>
+            <option value="博士">博士</option>
+            <option value="硕士">硕士</option>
+            <option value="本科">本科</option>
+            <option value="大专">大专</option>
+            <option value="职高及中专">职高及中专</option>
+            <option value="高中以下">高中以下</option>
+            </select>
+            </td>
+            <td height="25" align="right" class="bord"><span class="STYLE2">外语语种及程度：</span></td>
+            <td height="25" align="left" class="bord">
+            <input type="text" maxlength="35" size="18" name="foreign">
+            </td>
+            </tr>
+            <tr>
+            <td width="14%" height="25" align="right" class="bord"><span class="c_red">*</span>移动电话：</td>
+            <td width="27%" height="25" align="left" class="bord">
+            <input type="text" errmsg="请输入移动电话！|移动电话格式不正确！" valid="required|isMobile" maxlength="11" size="20" name="mobile">
+            </td>
+            <td width="17%" height="25" align="right" class="bord">电子邮件：</td>
+            <td width="42%" height="25" align="left" class="bord">
+            <input type="text" errmsg="电子邮件格式不正确！" valid="isEmail" maxlength="35" size="25" name="email">
+            </td>
+            </tr>
+            <tr>
+            <td height="25" align="right" class="bord">身份证号：</td>
+            <td height="25" align="left" class="bord">
+            <input type="text" errmsg="身份证号码格式不正确！" valid="isIdCard" value="" maxlength="36" name="idnums">
+            </td>
+            <td height="25" align="right" class="bord"><span class="STYLE2">现住址：</span></td>
+            <td height="25" align="left" class="bord">
+            <input type="text" maxlength="20" size="40" name="address_now">
+            </td>
+            </tr>
+            <tr>
+            <td width="14%" height="25" align="right" class="bord">可到职日期：</td>
+            <td height="25" align="left" class="bord" colspan="3">
+            <select name="slim">
+            <option selected="selected" value="随时">---随时---</option>
+            <option value="1周内">1周内</option>
+            <option value="1月内">1月内</option>
+            </select>
+            </td>
+            </tr>
+            <tr>
+            <td width="14%" height="25" align="right" class="bord">备注：</td>
+            <td height="25" align="left" class="bord" colspan="3">
+            <textarea rows="5" cols="60" name="content"></textarea>
+            </td>
+            </tr>
+            
+            <tr>
+            <td width="14%" height="25" align="right" class="bord"><span class="c_red">*</span>验证码：</td>
+            <td height="25" align="left" class="bord" colspan="3">
+                <input type="text" border="0" maxlength="4" errmsg="请输入验证码|验证码输入有误，请重新输入" valid="required|custom" custom="ckvaild" id="vaild" name="verify" size="12">
+               <img align="absmiddle" onclick="this.src='__MODULE__/Job/code/'+Math.random();" style="cursor:pointer;" title="看不清？点击一下！" alt="看不清？点击一下！" src="__MODULE__/Job/code" style="height:60px;" id="verify"> 
+            </td>
+            </tr>
+        </tbody></table>
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+            <td height="76" align="center">
+            <input type="submit" onclick="return validator(document.hrform);" title="提交求职表" value="提交求职表" style="cursor:pointer;" class="hr_btn" name="hrsbtn">
+            </td>
+            </tr>
+        </tbody></table>
+        </form>
+        </div>
+    </div>
+</div>
+</div>
+<div class="clear"></div>
+<include file="Common/footer" />
+
+    </body>
+</html>
+
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>车辆展示_这里是您的网站名称</title>
+<meta name="keywords" content="这里是您的网站名称" />
+<meta name="description" content="这里是您的网站名称"/>
+
+<meta name="Author" content="024" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<script type="text/javascript" src="__PUBLIC__/pc/style/urlredirect.js"></script>
+<LINK href="__PUBLIC__/pc/style/style.css" rel=stylesheet>
+<LINK href="__PUBLIC__/pc/style/jbox.css" rel=stylesheet>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/functions.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/validForm/FormValid.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jbox/jquery.jBox-2.3.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/search.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/menu.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jQselect.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/slides.min.jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jquery.touchSlider.js"></script>
+<script type="text/javascript"><!--ibanner-->
+
+$(document).ready(function () {
+	$(".main_visual").hover(function(){
+		$("#btn_prev,#btn_next").fadeIn()
+		},function(){
+		$("#btn_prev,#btn_next").fadeOut()
+		})
+	$dragBln = false;
+	$(".main_image").touchSlider({
+		flexible : true,
+		speed : 200,
+		btn_prev : $("#btn_prev"),
+		btn_next : $("#btn_next"),
+		paging : $(".flicking_con a"),
+		counter : function (e) {
+			$(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+		}
+	});
+	$(".main_image").bind("mousedown", function() {
+		$dragBln = false;
+	})
+	$(".main_image").bind("dragstart", function() {
+		$dragBln = true;
+	})
+	$(".main_image a").click(function() {
+		if($dragBln) {
+			return false;
+		}
+	})
+	timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	$(".main_visual").hover(function() {
+		clearInterval(timer);
+	}, function() {
+		timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	})
+	$(".main_image").bind("touchstart", function() {
+		clearInterval(timer);
+	}).bind("touchend", function() {
+		timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	})
+});
+</script>
+<script><!--pro-->
+		$(function(){
+			// Set starting slide to 1
+			var startSlide = 1;
+			// Get slide number if it exists
+			if (window.location.hash) {
+				startSlide = window.location.hash.replace('#','');
+			}
+			// Initialize Slides
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				generatePagination: true,
+				play: 0,
+				pause: 2500,
+				hoverPause: true,
+				// Get the starting slide
+				start: startSlide,
+				animationComplete: function(current){
+					// Set the slide number as a hash
+					//window.location.hash = '#' + current;
+				}
+			});
+		});
+</script>
+<!--[if IE 6]><script type="text/javascript" src="js/DD_belatedPNG.js"></script><![endif]-->
+</head>
+<body>
+<div class="fixed"> <a href="book.php" title="留言" class="barbook"></a> <a href="javascript:;" title="二维码" class="codepic"></a> <a href="javascript:;" title="返回顶部" class="backup"></a>
+  <div> <img src="http://0001543.ks.panguweb.cn/upfile/qr/qrcode.png" alt="这里是您的网站名称" class="code" /> </div>
+</div>
+<include file="Common/head" />
+<script type="text/javascript" src="__PUBLIC__/pc/style/js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.zoombut').lightBox();
+    });
+</script>
+<div class="fy" style=" background:url(http://0001543.ks.panguweb.cn/upfile/ads/20150804113438-369103644.jpg) center top no-repeat;">
+    	<div class="fra">
+    	<include file="Common/left" />
+        <div class="fyRight">
+      			<div class="title"> <span class="fl">{$selftop}</span> <span class="fr">当前位置：<a href="__APP__" title="首页">首页</a> > 
+      			<volist name="pres" id="vo">
+      			<if condition="$i != count($pres)">
+      			<a href="__MODULE__/<if condition="$vo['type'] eq 1">Arlist<elseif condition="$vo['type'] eq 2"/>Page<elseif condition="$vo['type'] eq 3"/>Message<elseif condition="$vo['type'] eq 4"/>Zplist<elseif condition="$vo['type'] eq 5"/>Carlist<elseif condition="$vo['type'] eq 6"/>Ry<elseif condition="$vo['type'] eq 7"/>Job</if>/index/cateid/{$vo.id}">{$vo.name}</a> &gt;
+      			<else />
+      			<font>{$vo.name}</font>
+      			</if>
+      			</volist>
+      			</span></div>
+
+    		    <ul class="proul">
+                      <volist name="list" id="vo">
+          	         <li>
+                        <a href="__MODULE__/Article/index/arid/{$vo.id}" title="车型：{$vo.title}">
+                        	<p class="casetitle1" ><span title="车型：{$vo.title}" href="__ROOT__{$vo.pic}" class="zoombut"></span><span class="jianjie">车型：{$vo.title}</span> </p> 
+                            <img src="__ROOT__{$vo.pic}" width="245" height="184" alt="车型：{$vo.title}" />
+                            <p class="wor"><span>车型：{$vo.title}</span><label>日租：{$vo.rizu}元/天</label></p>
+                        </a>
+                     </li>       
+                     </volist>    
+          	</ul>    
+
+                 	<div class="page">
+                  {$page}
+                 </div>
+  			</div>
+    	</div>
+</div>
+<div class="clear"></div>
+<include file="Common/footer" />
+
+    </body>
+</html>
+
+

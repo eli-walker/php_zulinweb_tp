@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+    <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" />
+    <script type="text/javascript" src="__PUBLIC__/js/libs/modernizr.min.js"></script>
+     <script type="text/javascript" src="__PUBLIC__/js/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+
+<!--/引入模板头部-->
+<include file="common/head" />   
+
+<div class="container clearfix">
+
+<!--/引入模板左部-->
+    <include file="common/left"/>
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="/jscss/admin/design/">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="__MODULE__/Message/lst">留言管理</a><span class="crumb-step">&gt;</span><span>查看及回复留言</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <input type="hidden" name="mid" value="{$messages.id}" />
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red">*</i>姓名：</th>
+                                <td>
+                                  {$messages.nickname}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>手机：</th>
+                                <td>{$messages.telephone}</td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>邮箱：</th>
+                                <td>{$messages.email}</td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>留言内容：</th>
+                                <td>{$messages.content}</td>
+                            </tr>
+                            <volist name="replyres" id="vo">
+                            <tr style="color:red;">
+                                <th>回复{$i}：</th>
+                                <td>{$vo.content}</td>
+                            </tr>
+                            </volist>
+                            <tr>
+                                <th>管理员回复：</th>
+                                <td><textarea name="content" class="common-textarea" cols="75" rows="6">{$links.des}</textarea></td>
+                            </tr>
+                            
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>
+<script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    UE.getEditor('content',{initialFrameWidth:1500,initialFrameHeight:400,});
+    
+
+
+</script>
